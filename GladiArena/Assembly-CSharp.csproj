@@ -69,6 +69,7 @@
     <Compile Include="Assets\Assets\Script\BulletRight.cs" />
     <Compile Include="Assets\Assets\Script\BulletUpRight.cs" />
     <Compile Include="Assets\Assets\Script\MainMenu.cs" />
+    <Compile Include="Assets\Assets\Script\PauseMenu.cs" />
     <Compile Include="Assets\Assets\Script\PlayerMvt.cs" />
     <Compile Include="Assets\Assets\Script\PlayerShoot.cs" />
     <Compile Include="Assets\Assets\Script\TextHover.cs" />
