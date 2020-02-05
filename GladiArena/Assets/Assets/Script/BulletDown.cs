@@ -23,5 +23,10 @@ public class BulletDown : MonoBehaviour
         {
             Destroy(gameObject);
         }
+        if (other.CompareTag("bad"))
+        {
+            Destroy(gameObject);
+        }
     }
+
 }

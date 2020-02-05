@@ -23,5 +23,9 @@ public class BulletDownRight : MonoBehaviour
         {
             Destroy(gameObject);
         }
+        if (other.CompareTag("bad"))
+        {
+            Destroy(gameObject);
+        }
     }
 }

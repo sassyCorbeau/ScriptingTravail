@@ -23,5 +23,9 @@ public class BulletUpLeft : MonoBehaviour
         {
             Destroy(gameObject);
         }
+        if (other.CompareTag("bad"))
+        {
+            Destroy(gameObject);
+        }
     }
 }

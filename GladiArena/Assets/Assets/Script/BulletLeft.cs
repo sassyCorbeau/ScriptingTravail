@@ -23,5 +23,10 @@ public class BulletLeft : MonoBehaviour
         {
             Destroy(gameObject);
         }
+        if (other.CompareTag("bad"))
+        {
+            Destroy(gameObject);
+        }
     }
+
 }

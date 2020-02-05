@@ -10,6 +10,7 @@ public class EnemyFollow : MonoBehaviour
 
     public Transform Player;
     //Remplir sur l'inspector avec le Player
+    private int timerMort = 0;
 
     void Start()
     {
@@ -18,6 +19,8 @@ public class EnemyFollow : MonoBehaviour
 
     void Update()
     {
+        
+        
         Vector3 displacement = Player.position - transform.position;
         displacement = displacement.normalized;
         if (Vector2.Distance(Player.position, transform.position) > 1.0f)
@@ -37,5 +40,20 @@ public class EnemyFollow : MonoBehaviour
         }
 
     }
-
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            Destroy(gameObject);
+        }
+        
+    }
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.CompareTag("bullet"))
+        {
+            Destroy(gameObject);
+        }
+    }
 }
+

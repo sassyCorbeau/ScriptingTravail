@@ -24,5 +24,9 @@ public class Bullet : MonoBehaviour
         {
             Destroy(gameObject);
         }
+        if (other.CompareTag("bad"))
+        {
+            Destroy(gameObject);
+        }
     }
 }
