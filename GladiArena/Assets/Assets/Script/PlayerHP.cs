@@ -5,6 +5,7 @@ using UnityEngine;
 public class PlayerHP : MonoBehaviour
 {
     public int PlayerHealth;
+    public GameObject gameoverUI;
     void Start()
     {
         
@@ -15,6 +16,7 @@ public class PlayerHP : MonoBehaviour
     {
         if (PlayerHealth == 0)
         {
+            gameoverUI.SetActive(true);
             Destroy(gameObject);
         }
     }
