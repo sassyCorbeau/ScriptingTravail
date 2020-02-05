@@ -17,4 +17,11 @@ public class BulletUpRight : MonoBehaviour
         GetComponent<Rigidbody>().AddForce(20f, 20f, 0f);
 
     }
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("stop"))
+        {
+            Destroy(gameObject);
+        }
+    }
 }
