@@ -15,6 +15,14 @@ public class Bullet : MonoBehaviour
     void Update()
     {
         GetComponent<Rigidbody>().AddForce(0f, 20f, 0f);
-
+        
+        
+    }
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("stop"))
+        {
+            Destroy(gameObject);
+        }
     }
 }

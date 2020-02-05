@@ -65,13 +65,17 @@
   <ItemGroup>
     <Compile Include="Assets\Assets\Script\Bullet.cs" />
     <Compile Include="Assets\Assets\Script\BulletDown.cs" />
+    <Compile Include="Assets\Assets\Script\BulletDownLeft.cs" />
+    <Compile Include="Assets\Assets\Script\BulletDownRight.cs" />
     <Compile Include="Assets\Assets\Script\BulletLeft.cs" />
     <Compile Include="Assets\Assets\Script\BulletRight.cs" />
+    <Compile Include="Assets\Assets\Script\BulletUpLeft.cs" />
     <Compile Include="Assets\Assets\Script\BulletUpRight.cs" />
     <Compile Include="Assets\Assets\Script\MainMenu.cs" />
     <Compile Include="Assets\Assets\Script\PauseMenu.cs" />
     <Compile Include="Assets\Assets\Script\PlayerMvt.cs" />
     <Compile Include="Assets\Assets\Script\PlayerShoot.cs" />
+    <Compile Include="Assets\Assets\Script\PlayerShootTexte.cs" />
     <Compile Include="Assets\Assets\Script\TextHover.cs" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface-Mobile.shader" />
     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
