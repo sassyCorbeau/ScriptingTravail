@@ -29,7 +29,8 @@ public class PowerUP_Collect : MonoBehaviour
     public void Pickup(Collider player)
     {
         Debug.Log("Power up is picked !");
-        GameObject.Find("GameManger").GetComponent<GameManager>().PowerUP++;
+        //GameObject.Find("GameManger").GetComponent<GameManager>().PowerUP++;
+        GameManager.PowerUP++;
         Destroy(gameObject);
     }
 }
