@@ -14,7 +14,7 @@ public class EnemyFollow : MonoBehaviour
 
     void Start()
     {
-
+        Player = GameObject.Find("Player").transform;
     }
 
     void Update()
@@ -28,16 +28,7 @@ public class EnemyFollow : MonoBehaviour
             transform.position += (displacement * speed * Time.deltaTime);
         }
 
-        else
-        {
-            /*
-             variable de vie -1
-             destroy all enemies
-             variable de power-up = 0
-
-            à remplir après dans le script du GameManager un if(variable de vie = 0) --> ouvrir scene de game over
-            */
-        }
+        
 
     }
     private void OnCollisionEnter(Collision collision)
@@ -53,6 +44,7 @@ public class EnemyFollow : MonoBehaviour
         if (other.gameObject.CompareTag("bullet"))
         {
             Destroy(gameObject);
+            ScoreCounter.currentScore = ScoreCounter.currentScore + 50f;
         }
     }
 }
