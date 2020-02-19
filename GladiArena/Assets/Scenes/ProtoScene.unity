@@ -3053,6 +3053,11 @@ PrefabInstance:
       propertyPath: fin
       value: 
       objectReference: {fileID: 386241114}
+    - target: {fileID: 62768805829361713, guid: ef788e2a12996784dab99d1896d3bf0e,
+        type: 3}
+      propertyPath: speed
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 62768805829361718, guid: ef788e2a12996784dab99d1896d3bf0e,
         type: 3}
       propertyPath: m_Name
@@ -3137,6 +3142,11 @@ PrefabInstance:
       propertyPath: Player
       value: 
       objectReference: {fileID: 2037170873}
+    - target: {fileID: 3060579972821872177, guid: 9090efc60e749de40b498e6a2a070ba5,
+        type: 3}
+      propertyPath: speed
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 3060579972821872201, guid: 9090efc60e749de40b498e6a2a070ba5,
         type: 3}
       propertyPath: m_LocalPosition.x

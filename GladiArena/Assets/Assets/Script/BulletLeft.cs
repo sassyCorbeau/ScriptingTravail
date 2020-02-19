@@ -14,7 +14,8 @@ public class BulletLeft : MonoBehaviour
 
     void Update()
     {
-        GetComponent<Rigidbody>().AddForce(-20f, 0f, 0f);
+        
+        GetComponent<Rigidbody>().AddForce(-40f, 0f, 0f);
 
     }
     private void OnTriggerEnter(Collider other)

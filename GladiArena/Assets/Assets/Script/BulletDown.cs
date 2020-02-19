@@ -14,7 +14,8 @@ public class BulletDown : MonoBehaviour
 
     void Update()
     {
-        GetComponent<Rigidbody>().AddForce(0f, -20f, 0f);
+        
+        GetComponent<Rigidbody>().AddForce(0f, -40f, 0f);
 
     }
     private void OnTriggerEnter(Collider other)
