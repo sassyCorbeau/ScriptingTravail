@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-    public static int PowerUP ;
+    public static int PowerUP =0;
 
     bool fireRate = false;
     bool spreasShot = false;
@@ -15,13 +15,14 @@ public class GameManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        PowerUP = 0;
+        //PowerUP = 0;
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        PowerUPSwitch();
+
     }
 
     void PowerUPSwitch()
@@ -29,12 +30,18 @@ public class GameManager : MonoBehaviour
         switch (PowerUP)
         {
             case 0:
+                if (Input.GetKeyDown("space"))
+                {
+
+                    Debug.Log("hey");
+                }
                 break;
             case 1:
                 if (Input.GetKeyDown("space"))
                 {
                     fireRate = true;
-                    PowerUP = 0;  
+                    PowerUP = 0;
+                    Debug.Log("ca marche");
                 }
                     break;
             case 2:
