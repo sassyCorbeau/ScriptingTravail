@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-    public static int PowerUP =0;
+    public static int PowerUP = 0;
 
     float timerPower = 0;
     bool fireRate = false;
@@ -13,7 +13,7 @@ public class GameManager : MonoBehaviour
     bool shield = false;
     bool multiHit = false;
     bool defaut = false;
-  
+
     // Start is called before the first frame update
     void Start()
     {
@@ -35,16 +35,16 @@ public class GameManager : MonoBehaviour
 
         PowerUPSwitch();
         fireRatePower();
-<<<<<<< HEAD
+
         shieldPower();
-=======
+
         speedBoostPower();
->>>>>>> a5f806cc04f2b72adae93b2a89e236b0cbc59fbe
+
 
 
     }
 
-     void PowerUPSwitch()
+    void PowerUPSwitch()
     {
         switch (PowerUP)
         {
@@ -61,9 +61,9 @@ public class GameManager : MonoBehaviour
                     fireRate = true;
                     PowerUP = 0;
                     Debug.Log("fireRate");
-                    
+
                 }
-                    break;
+                break;
             case 2:
                 if (Input.GetKeyDown("space"))
                 {
@@ -96,7 +96,7 @@ public class GameManager : MonoBehaviour
                     Debug.Log("multy");
                 }
                 break;
-             default:
+            default:
 
                 if (Input.GetKeyDown("space"))
                 {
@@ -106,7 +106,7 @@ public class GameManager : MonoBehaviour
                 break;
         }
 
-    } 
+    }
     void fireRatePower()
     {
         if (fireRate == true)
@@ -129,7 +129,7 @@ public class GameManager : MonoBehaviour
 
         }
     }
-<<<<<<< HEAD
+
     void shieldPower()
     {
         if (shield == true)
@@ -139,14 +139,14 @@ public class GameManager : MonoBehaviour
             timerPower = timerPower + Time.deltaTime;
             PlayerHP.PlayerHealth = 2;
 
-            if(PlayerHP.PlayerHealth == 1)
+            if (PlayerHP.PlayerHealth == 1)
             {
                 Debug.Log("Shield is off");
                 timerPower = 0;
                 shield = false;
                 return;
             }
-            
+
             if (timerPower > 10)
             {
                 Debug.Log("Shield is off");
@@ -157,7 +157,12 @@ public class GameManager : MonoBehaviour
             }
 
 
-=======
+
+            
+
+
+        }
+    }
     void speedBoostPower()
     {
         if (speedBoost == true)
@@ -178,11 +183,9 @@ public class GameManager : MonoBehaviour
             }
 
 
->>>>>>> a5f806cc04f2b72adae93b2a89e236b0cbc59fbe
+
         }
     }
-
-
 }
 
 
