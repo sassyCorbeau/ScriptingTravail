@@ -1,5 +1,9 @@
 sceneSetups:
+<<<<<<< HEAD
+- path: Assets/Scenes/JB.unity
+=======
 - path: Assets/Scenes/Ludivine.unity
+>>>>>>> 7dd1189eb493c51da779832722e4a21361202982
   isLoaded: 1
   isActive: 1
   isSubScene: 0

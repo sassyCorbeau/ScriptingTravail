@@ -1,12 +1,22 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
     public static int PowerUP = 0;
 
+<<<<<<< HEAD
+    public GameObject pUp1;
+    public GameObject pUp2;
+    public GameObject pUp3;
+    public GameObject pUp4;
+    public GameObject pUp5;
+
+=======
     float timerPower = 0;
+>>>>>>> 7dd1189eb493c51da779832722e4a21361202982
     bool fireRate = false;
     bool spreasShot = false;
     bool speedBoost = false;
@@ -26,7 +36,15 @@ public class GameManager : MonoBehaviour
         PowerUP = 0;
 
         //PowerUP = 0;
+<<<<<<< HEAD
+        pUp1.GetComponent<Image>().color = Color.grey;
+        pUp2.GetComponent<Image>().color = Color.grey;
+        pUp3.GetComponent<Image>().color = Color.grey;
+        pUp4.GetComponent<Image>().color = Color.grey;
+        pUp5.GetComponent<Image>().color = Color.grey;
+=======
 
+>>>>>>> 7dd1189eb493c51da779832722e4a21361202982
     }
 
     // Update is called once per frame
@@ -34,6 +52,8 @@ public class GameManager : MonoBehaviour
     {
 
         PowerUPSwitch();
+<<<<<<< HEAD
+=======
         fireRatePower();
 
         shieldPower();
@@ -42,6 +62,7 @@ public class GameManager : MonoBehaviour
 
 
 
+>>>>>>> 7dd1189eb493c51da779832722e4a21361202982
     }
 
     void PowerUPSwitch()
@@ -51,49 +72,83 @@ public class GameManager : MonoBehaviour
             case 0:
                 if (Input.GetKeyDown("space"))
                 {
+<<<<<<< HEAD
+                    Debug.Log("hey");
+=======
 
                     Debug.Log("=0");
+>>>>>>> 7dd1189eb493c51da779832722e4a21361202982
                 }
                 break;
             case 1:
+                pUp1.GetComponent<Image>().color = Color.red;
                 if (Input.GetKeyDown("space"))
                 {
                     fireRate = true;
                     PowerUP = 0;
+<<<<<<< HEAD
+                    pUp1.GetComponent<Image>().color = Color.grey;
+                    Debug.Log("ca marche");
+=======
                     Debug.Log("fireRate");
 
+>>>>>>> 7dd1189eb493c51da779832722e4a21361202982
                 }
                 break;
             case 2:
+                pUp1.GetComponent<Image>().color = Color.grey;
+                pUp2.GetComponent<Image>().color = Color.red;
                 if (Input.GetKeyDown("space"))
                 {
                     spreasShot = true;
                     PowerUP = 0;
+<<<<<<< HEAD
+                    pUp2.GetComponent<Image>().color = Color.grey;
+=======
                     Debug.Log("spreadshot");
+>>>>>>> 7dd1189eb493c51da779832722e4a21361202982
                 }
                 break;
             case 3:
+                pUp2.GetComponent<Image>().color = Color.grey;
+                pUp3.GetComponent<Image>().color = Color.red;
                 if (Input.GetKeyDown("space"))
                 {
                     speedBoost = true;
                     PowerUP = 0;
+<<<<<<< HEAD
+                    pUp3.GetComponent<Image>().color = Color.grey;
+=======
                     Debug.Log("speadboost");
+>>>>>>> 7dd1189eb493c51da779832722e4a21361202982
                 }
                 break;
             case 4:
+                pUp3.GetComponent<Image>().color = Color.grey;
+                pUp4.GetComponent<Image>().color = Color.red;
                 if (Input.GetKeyDown("space"))
                 {
                     shield = true;
                     PowerUP = 0;
+<<<<<<< HEAD
+                    pUp4.GetComponent<Image>().color = Color.grey;
+=======
                     Debug.Log("shield");
+>>>>>>> 7dd1189eb493c51da779832722e4a21361202982
                 }
                 break;
             case 5:
+                pUp4.GetComponent<Image>().color = Color.grey;
+                pUp5.GetComponent<Image>().color = Color.red;
                 if (Input.GetKeyDown("space"))
                 {
                     multiHit = true;
                     PowerUP = 0;
+<<<<<<< HEAD
+                    pUp5.GetComponent<Image>().color = Color.grey;
+=======
                     Debug.Log("multy");
+>>>>>>> 7dd1189eb493c51da779832722e4a21361202982
                 }
                 break;
             default:
@@ -102,6 +157,7 @@ public class GameManager : MonoBehaviour
                 {
                     defaut = true;
                     PowerUP = 0;
+                    pUp5.GetComponent<Image>().color = Color.grey;
                 }
                 break;
         }
