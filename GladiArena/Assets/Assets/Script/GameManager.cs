@@ -54,7 +54,7 @@ public class GameManager : MonoBehaviour
             case 4:
                 if (Input.GetKeyDown("space"))
                 {
-                    hield = true;
+                    shield = true;
                     PowerUP = 0;
                 }
                 break;
@@ -65,7 +65,7 @@ public class GameManager : MonoBehaviour
                     PowerUP = 0;
                 }
                 break;
-            case default:
+             default:
 
                 if (Input.GetKeyDown("space"))
                 {
