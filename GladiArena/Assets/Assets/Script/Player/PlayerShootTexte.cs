@@ -27,56 +27,89 @@ public class PlayerShootTexte : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKey(KeyCode.UpArrow) && Input.GetKey(KeyCode.RightArrow) && Time.time > nextFire)
+        if (GameManager.multiHit == false)
         {
-            nextFire = Time.time + fireRate;
-            Instantiate(shotUpRight, transform.transform);
-            return;
+            if (Input.GetKey(KeyCode.UpArrow) && Input.GetKey(KeyCode.RightArrow) && Time.time > nextFire)
+            {
+                nextFire = Time.time + fireRate;
+                Instantiate(shotUpRight, transform.transform);
+                return;
 
-        }
-        if (Input.GetKey(KeyCode.UpArrow) && Input.GetKey(KeyCode.LeftArrow) && Time.time > nextFire)
-        {
-            nextFire = Time.time + fireRate;
-            Instantiate(shotUpLeft, transform.transform);
-            return;
+            }
+            if (Input.GetKey(KeyCode.UpArrow) && Input.GetKey(KeyCode.LeftArrow) && Time.time > nextFire)
+            {
+                nextFire = Time.time + fireRate;
+                Instantiate(shotUpLeft, transform.transform);
+                return;
 
-        }
-        if (Input.GetKey(KeyCode.DownArrow) && Input.GetKey(KeyCode.RightArrow) && Time.time > nextFire)
-        {
-            nextFire = Time.time + fireRate;
-            Instantiate(shotDownRight, transform.transform);
-            return;
+            }
+            if (Input.GetKey(KeyCode.DownArrow) && Input.GetKey(KeyCode.RightArrow) && Time.time > nextFire)
+            {
+                nextFire = Time.time + fireRate;
+                Instantiate(shotDownRight, transform.transform);
+                return;
 
-        }
-        if (Input.GetKey(KeyCode.DownArrow) && Input.GetKey(KeyCode.LeftArrow) && Time.time > nextFire)
-        {
-            nextFire = Time.time + fireRate;
-            Instantiate(shotDownLeft, transform.transform);
-            return;
+            }
+            if (Input.GetKey(KeyCode.DownArrow) && Input.GetKey(KeyCode.LeftArrow) && Time.time > nextFire)
+            {
+                nextFire = Time.time + fireRate;
+                Instantiate(shotDownLeft, transform.transform);
+                return;
 
+            }
+            if (Input.GetKey(KeyCode.UpArrow) && Time.time > nextFire)
+            {
+                nextFire = Time.time + fireRate;
+                Instantiate(shotUp, transform.transform);
+
+            }
+            if (Input.GetKey(KeyCode.DownArrow) && Time.time > nextFire)
+            {
+                nextFire = Time.time + fireRate;
+                Instantiate(shotDown, transform.transform);
+            }
+            if (Input.GetKey(KeyCode.LeftArrow) && Time.time > nextFire)
+            {
+                nextFire = Time.time + fireRate;
+                Instantiate(shotLeft, transform.transform);
+            }
+            if (Input.GetKey(KeyCode.RightArrow) && Time.time > nextFire)
+            {
+                nextFire = Time.time + fireRate;
+                Instantiate(shotRight, transform.transform);
+            }
         }
-        if (Input.GetKey(KeyCode.UpArrow) && Time.time > nextFire)
+
+        // MultiHit
+
+        if (GameManager.multiHit == true)
         {
-            nextFire = Time.time + fireRate;
-            Instantiate(shotUp, transform.transform);
-            
+
+            Debug.Log("Multihit = True");
+
+            GameManager.timerPower = GameManager.timerPower + Time.deltaTime;
+
+            Debug.Log("Multihit changée");
+            if (Input.GetKey(KeyCode.RightArrow) || (Input.GetKey(KeyCode.LeftArrow) || (Input.GetKey(KeyCode.DownArrow) || (Input.GetKey(KeyCode.UpArrow)))))
+            {
+                nextFire = Time.time + fireRate;
+                Instantiate(shotUp, transform.transform);
+                Instantiate(shotRight, transform.transform);
+                Instantiate(shotLeft, transform.transform);
+                Instantiate(shotDown, transform.transform);
+            }
+            if (GameManager.timerPower > 10)
+            {
+                GameManager.multiHit = false;
+                Debug.Log("Multihit End");
+                PlayerShootTexte.fireRate = 0.5f;
+                GameManager.timerPower = 0;
+                return;
+            }
         }
-        if (Input.GetKey(KeyCode.DownArrow) && Time.time > nextFire)
-        {
-            nextFire = Time.time + fireRate;
-            Instantiate(shotDown, transform.transform);
-        }
-        if (Input.GetKey(KeyCode.LeftArrow) && Time.time > nextFire)
-        {
-            nextFire = Time.time + fireRate;
-            Instantiate(shotLeft, transform.transform);
-        }
-        if (Input.GetKey(KeyCode.RightArrow) && Time.time > nextFire)
-        {
-            nextFire = Time.time + fireRate;
-            Instantiate(shotRight, transform.transform);
-        }
-             
+
     }
-  
 }
+
+
+

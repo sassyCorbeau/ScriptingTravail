@@ -15,13 +15,17 @@ public class GameManager : MonoBehaviour
     public GameObject pUp5;
 
 
+<<<<<<< HEAD
+    static public float timerPower = 0;
+=======
     float timerPower = 0;
+>>>>>>> 36c13a36863528be3bd8bd2f4ff0d90e2133abd2
 
     bool fireRate = false;
     bool spreasShot = false;
     bool speedBoost = false;
     bool shield = false;
-    bool multiHit = false;
+    static public bool multiHit = false;
     bool defaut = false;
 
     // Start is called before the first frame update
@@ -43,6 +47,11 @@ public class GameManager : MonoBehaviour
         pUp4.GetComponent<Image>().color = Color.grey;
         pUp5.GetComponent<Image>().color = Color.grey;
 
+<<<<<<< HEAD
+
+
+=======
+>>>>>>> 36c13a36863528be3bd8bd2f4ff0d90e2133abd2
     }
 
     // Update is called once per frame
