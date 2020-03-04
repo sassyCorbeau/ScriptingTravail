@@ -17,7 +17,7 @@ public class GameManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-<<<<<<< HEAD
+
         fireRate = false;
         spreasShot = false;
         speedBoost = false;
@@ -25,42 +25,19 @@ public class GameManager : MonoBehaviour
         multiHit = false;
         defaut = false;
         PowerUP = 0;
-=======
+
         //PowerUP = 0;
->>>>>>> 9a08e64f7fbd3036793b288842858f7e9941628f
+
     }
 
     // Update is called once per frame
     void FixedUpdate()
     {
-<<<<<<< HEAD
-        if (Input.GetKeyDown(KeyCode.P))
-        {
-            fireRate = true;
-        }
-        if (fireRate == true)
-        {
-            Debug.Log("fireRate = True");
 
-            timerPower = timerPower + Time.deltaTime;
-            
-                PlayerShootTexte.fireRate = 0.2f;
-                Debug.Log("Firerate changée");
-                if (timerPower > 10)
-            {
-                fireRate = false;
-                Debug.Log("fireRate End");
-                PlayerShootTexte.fireRate = 0.5f;
-                timerPower = 0;
-                return;
-            }
-            
-            
-        }
-=======
         PowerUPSwitch();
+        fireRatePower();
 
->>>>>>> 9a08e64f7fbd3036793b288842858f7e9941628f
+
     }
 
      void PowerUPSwitch()
@@ -80,6 +57,7 @@ public class GameManager : MonoBehaviour
                     fireRate = true;
                     PowerUP = 0;
                     Debug.Log("fireRate");
+                    
                 }
                     break;
             case 2:
@@ -123,11 +101,32 @@ public class GameManager : MonoBehaviour
                 }
                 break;
         }
-<<<<<<< HEAD
+
     } 
-    
- 
-=======
+    void fireRatePower()
+    {
+        if (fireRate == true)
+        {
+            Debug.Log("fireRate = True");
+
+            timerPower = timerPower + Time.deltaTime;
+
+            PlayerShootTexte.fireRate = 0.2f;
+            Debug.Log("Firerate changée");
+            if (timerPower > 10)
+            {
+                fireRate = false;
+                Debug.Log("fireRate End");
+                PlayerShootTexte.fireRate = 0.5f;
+                timerPower = 0;
+                return;
+            }
+
+
+        }
     }
->>>>>>> 9a08e64f7fbd3036793b288842858f7e9941628f
-}
+ 
+
+    }
+
+
