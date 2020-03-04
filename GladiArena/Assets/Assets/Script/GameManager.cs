@@ -15,7 +15,11 @@ public class GameManager : MonoBehaviour
     public GameObject pUp5;
 
 
+<<<<<<< HEAD
     static public float timerPower = 0;
+=======
+    float timerPower = 0;
+>>>>>>> 36c13a36863528be3bd8bd2f4ff0d90e2133abd2
 
     bool fireRate = false;
     bool spreasShot = false;
@@ -43,8 +47,11 @@ public class GameManager : MonoBehaviour
         pUp4.GetComponent<Image>().color = Color.grey;
         pUp5.GetComponent<Image>().color = Color.grey;
 
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> 36c13a36863528be3bd8bd2f4ff0d90e2133abd2
     }
 
     // Update is called once per frame
@@ -164,8 +171,10 @@ public class GameManager : MonoBehaviour
     }
     void fireRatePower()
     {
+
         if (fireRate == true)
         {
+            pUp1.GetComponent<Image>().color = Color.blue;
             Debug.Log("fireRate = True");
 
             timerPower = timerPower + Time.deltaTime;
@@ -177,6 +186,7 @@ public class GameManager : MonoBehaviour
                 fireRate = false;
                 Debug.Log("fireRate End");
                 PlayerShootTexte.fireRate = 0.5f;
+                pUp1.GetComponent<Image>().color = Color.grey;
                 timerPower = 0;
                 return;
             }
@@ -189,6 +199,7 @@ public class GameManager : MonoBehaviour
     {
         if (shield == true)
         {
+            pUp4.GetComponent<Image>().color = Color.blue;
             Debug.Log("Shield is on");
 
             timerPower = timerPower + Time.deltaTime;
@@ -207,6 +218,7 @@ public class GameManager : MonoBehaviour
                 Debug.Log("Shield is off");
                 PlayerHP.PlayerHealth = 1;
                 shield = false;
+                pUp4.GetComponent<Image>().color = Color.grey;
                 timerPower = 0;
                 return;
             }
@@ -222,6 +234,7 @@ public class GameManager : MonoBehaviour
     {
         if (speedBoost == true)
         {
+            pUp3.GetComponent<Image>().color = Color.blue;
             Debug.Log("speedBoost = True");
 
             timerPower = timerPower + Time.deltaTime;
@@ -231,8 +244,9 @@ public class GameManager : MonoBehaviour
             if (timerPower > 10)
             {
                 speedBoost = false;
+                pUp3.GetComponent<Image>().color = Color.grey;
                 Debug.Log("speedBoost End");
-                PlayerMvt.speed = 0.5f;
+                PlayerMvt.speed = 6f;
                 timerPower = 0;
                 return;
             }
