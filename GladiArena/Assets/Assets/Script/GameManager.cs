@@ -33,7 +33,7 @@ public class GameManager : MonoBehaviour
                 if (Input.GetKeyDown("space"))
                 {
 
-                    Debug.Log("hey");
+                    Debug.Log("=0");
                 }
                 break;
             case 1:
@@ -41,7 +41,7 @@ public class GameManager : MonoBehaviour
                 {
                     fireRate = true;
                     PowerUP = 0;
-                    Debug.Log("ca marche");
+                    Debug.Log("fireRate");
                 }
                     break;
             case 2:
@@ -49,6 +49,7 @@ public class GameManager : MonoBehaviour
                 {
                     spreasShot = true;
                     PowerUP = 0;
+                    Debug.Log("spreadshot");
                 }
                 break;
             case 3:
@@ -56,6 +57,7 @@ public class GameManager : MonoBehaviour
                 {
                     speedBoost = true;
                     PowerUP = 0;
+                    Debug.Log("speadboost");
                 }
                 break;
             case 4:
@@ -63,6 +65,7 @@ public class GameManager : MonoBehaviour
                 {
                     shield = true;
                     PowerUP = 0;
+                    Debug.Log("shield");
                 }
                 break;
             case 5:
@@ -70,6 +73,7 @@ public class GameManager : MonoBehaviour
                 {
                     multiHit = true;
                     PowerUP = 0;
+                    Debug.Log("multy");
                 }
                 break;
              default:
