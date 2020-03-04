@@ -21,7 +21,7 @@ public class PlayerShootTexte : MonoBehaviour
     public GameObject shotUpLeft;
     public GameObject shotDownRight;
     public GameObject shotDownLeft;
-    public float fireRate;
+    public static float fireRate = 0.5f;
 
     private float nextFire;
 
@@ -78,22 +78,5 @@ public class PlayerShootTexte : MonoBehaviour
         }
              
     }
-
-   /* void FixedUpdate()
-    {
-        float moveHorizontal = Input.GetAxis("Horizontal");
-        float moveVertical = Input.GetAxis("Vertical");
-
-        Vector3 movement = new Vector3(moveHorizontal, 0.0f, moveVertical);
-        rigidbody.velocity = movement * speed;
-
-        rigidbody.position = new Vector3
-        (
-            Mathf.Clamp(rigidbody.position.x, boundary.xMin, boundary.xMax),
-            0.0f,
-            Mathf.Clamp(rigidbody.position.z, boundary.zMin, boundary.zMax)
-        );
-
-        rigidbody.rotation = Quaternion.Euler(0.0f, 0.0f, rigidbody.velocity.x * -tilt);
-    } */
+  
 }

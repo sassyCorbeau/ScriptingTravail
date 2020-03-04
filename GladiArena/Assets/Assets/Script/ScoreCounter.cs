@@ -21,7 +21,7 @@ public class ScoreCounter : MonoBehaviour
     {
         if (currentScore == 100)
         {
-            Debug.Log("Le score as augmenté");
+            // Debug.Log("Le score as augmenté");
         }
         scoreText.text = "Score : " + currentScore;
         scoreLoser.text = "Score : " + currentScore;

@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayerHP : MonoBehaviour
 {
-    public int PlayerHealth;
+    public static int PlayerHealth = 1;
     public GameObject gameoverUI;
     void Start()
     {
