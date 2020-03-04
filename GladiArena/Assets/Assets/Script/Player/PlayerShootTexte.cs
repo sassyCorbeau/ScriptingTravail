@@ -21,7 +21,7 @@ public class PlayerShootTexte : MonoBehaviour
     public GameObject shotUpLeft;
     public GameObject shotDownRight;
     public GameObject shotDownLeft;
-    public float fireRate;
+    public static float fireRate = 0.5f;
 
     private float nextFire;
 

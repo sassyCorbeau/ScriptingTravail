@@ -6,25 +6,55 @@ public class GameManager : MonoBehaviour
 {
     public static int PowerUP ;
 
+    float timerPower = 0;
     bool fireRate = false;
     bool spreasShot = false;
     bool speedBoost = false;
     bool shield = false;
     bool multiHit = false;
     bool defaut = false;
+  
     // Start is called before the first frame update
     void Start()
     {
+        fireRate = false;
+        spreasShot = false;
+        speedBoost = false;
+        shield = false;
+        multiHit = false;
+        defaut = false;
         PowerUP = 0;
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
-        
+        if (Input.GetKeyDown(KeyCode.P))
+        {
+            fireRate = true;
+        }
+        if (fireRate == true)
+        {
+            Debug.Log("fireRate = True");
+
+            timerPower = timerPower + Time.deltaTime;
+            
+                PlayerShootTexte.fireRate = 0.2f;
+                Debug.Log("Firerate changée");
+                if (timerPower > 10)
+            {
+                fireRate = false;
+                Debug.Log("fireRate End");
+                PlayerShootTexte.fireRate = 0.5f;
+                timerPower = 0;
+                return;
+            }
+            
+            
+        }
     }
 
-    void PowerUPSwitch()
+     void PowerUPSwitch()
     {
         switch (PowerUP)
         {
@@ -74,6 +104,7 @@ public class GameManager : MonoBehaviour
                 }
                 break;
         }
-    }
+    } 
+    
  
 }
