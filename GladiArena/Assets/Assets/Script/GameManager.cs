@@ -17,7 +17,6 @@ public class GameManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
         fireRate = false;
         spreasShot = false;
         speedBoost = false;
@@ -36,6 +35,7 @@ public class GameManager : MonoBehaviour
 
         PowerUPSwitch();
         fireRatePower();
+        shieldPower();
 
 
     }
@@ -125,8 +125,37 @@ public class GameManager : MonoBehaviour
 
         }
     }
- 
+    void shieldPower()
+    {
+        if (shield == true)
+        {
+            Debug.Log("Shield is on");
 
+            timerPower = timerPower + Time.deltaTime;
+            PlayerHP.PlayerHealth = 2;
+
+            if(PlayerHP.PlayerHealth == 1)
+            {
+                Debug.Log("Shield is off");
+                timerPower = 0;
+                shield = false;
+                return;
+            }
+            
+            if (timerPower > 10)
+            {
+                Debug.Log("Shield is off");
+                PlayerHP.PlayerHealth = 1;
+                shield = false;
+                timerPower = 0;
+                return;
+            }
+
+
+        }
     }
+
+
+}
 
 
