@@ -36,6 +36,7 @@ public class GameManager : MonoBehaviour
 
         PowerUPSwitch();
         fireRatePower();
+        speedBoostPower();
 
 
     }
@@ -125,8 +126,30 @@ public class GameManager : MonoBehaviour
 
         }
     }
- 
+    void speedBoostPower()
+    {
+        if (speedBoost == true)
+        {
+            Debug.Log("speedBoost = True");
 
+            timerPower = timerPower + Time.deltaTime;
+
+            PlayerMvt.speed = 18f;
+            Debug.Log("speedBoost changée");
+            if (timerPower > 10)
+            {
+                speedBoost = false;
+                Debug.Log("speedBoost End");
+                PlayerMvt.speed = 0.5f;
+                timerPower = 0;
+                return;
+            }
+
+
+        }
     }
+
+
+}
 
 
