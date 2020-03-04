@@ -35,7 +35,11 @@ public class GameManager : MonoBehaviour
 
         PowerUPSwitch();
         fireRatePower();
+<<<<<<< HEAD
         shieldPower();
+=======
+        speedBoostPower();
+>>>>>>> a5f806cc04f2b72adae93b2a89e236b0cbc59fbe
 
 
     }
@@ -125,6 +129,7 @@ public class GameManager : MonoBehaviour
 
         }
     }
+<<<<<<< HEAD
     void shieldPower()
     {
         if (shield == true)
@@ -152,6 +157,28 @@ public class GameManager : MonoBehaviour
             }
 
 
+=======
+    void speedBoostPower()
+    {
+        if (speedBoost == true)
+        {
+            Debug.Log("speedBoost = True");
+
+            timerPower = timerPower + Time.deltaTime;
+
+            PlayerMvt.speed = 18f;
+            Debug.Log("speedBoost changée");
+            if (timerPower > 10)
+            {
+                speedBoost = false;
+                Debug.Log("speedBoost End");
+                PlayerMvt.speed = 0.5f;
+                timerPower = 0;
+                return;
+            }
+
+
+>>>>>>> a5f806cc04f2b72adae93b2a89e236b0cbc59fbe
         }
     }
 
