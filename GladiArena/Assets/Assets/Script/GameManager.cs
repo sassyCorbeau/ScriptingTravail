@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-    public static int PowerUP ;
+    public static int PowerUP =0;
 
     float timerPower = 0;
     bool fireRate = false;
@@ -17,6 +17,7 @@ public class GameManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+<<<<<<< HEAD
         fireRate = false;
         spreasShot = false;
         speedBoost = false;
@@ -24,11 +25,15 @@ public class GameManager : MonoBehaviour
         multiHit = false;
         defaut = false;
         PowerUP = 0;
+=======
+        //PowerUP = 0;
+>>>>>>> 9a08e64f7fbd3036793b288842858f7e9941628f
     }
 
     // Update is called once per frame
     void FixedUpdate()
     {
+<<<<<<< HEAD
         if (Input.GetKeyDown(KeyCode.P))
         {
             fireRate = true;
@@ -52,6 +57,10 @@ public class GameManager : MonoBehaviour
             
             
         }
+=======
+        PowerUPSwitch();
+
+>>>>>>> 9a08e64f7fbd3036793b288842858f7e9941628f
     }
 
      void PowerUPSwitch()
@@ -59,12 +68,18 @@ public class GameManager : MonoBehaviour
         switch (PowerUP)
         {
             case 0:
+                if (Input.GetKeyDown("space"))
+                {
+
+                    Debug.Log("=0");
+                }
                 break;
             case 1:
                 if (Input.GetKeyDown("space"))
                 {
                     fireRate = true;
-                    PowerUP = 0;  
+                    PowerUP = 0;
+                    Debug.Log("fireRate");
                 }
                     break;
             case 2:
@@ -72,6 +87,7 @@ public class GameManager : MonoBehaviour
                 {
                     spreasShot = true;
                     PowerUP = 0;
+                    Debug.Log("spreadshot");
                 }
                 break;
             case 3:
@@ -79,6 +95,7 @@ public class GameManager : MonoBehaviour
                 {
                     speedBoost = true;
                     PowerUP = 0;
+                    Debug.Log("speadboost");
                 }
                 break;
             case 4:
@@ -86,6 +103,7 @@ public class GameManager : MonoBehaviour
                 {
                     shield = true;
                     PowerUP = 0;
+                    Debug.Log("shield");
                 }
                 break;
             case 5:
@@ -93,6 +111,7 @@ public class GameManager : MonoBehaviour
                 {
                     multiHit = true;
                     PowerUP = 0;
+                    Debug.Log("multy");
                 }
                 break;
              default:
@@ -104,7 +123,11 @@ public class GameManager : MonoBehaviour
                 }
                 break;
         }
+<<<<<<< HEAD
     } 
     
  
+=======
+    }
+>>>>>>> 9a08e64f7fbd3036793b288842858f7e9941628f
 }
