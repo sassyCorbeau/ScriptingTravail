@@ -32,5 +32,6 @@ public class PowerUP_Collect : MonoBehaviour
         //GameObject.Find("GameManger").GetComponent<GameManager>().PowerUP++;
         GameManager.PowerUP++;
         Destroy(gameObject);
+        //GameManager.PowerUPSwitch();
     }
 }
