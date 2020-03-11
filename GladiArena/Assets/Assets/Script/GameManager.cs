@@ -8,11 +8,19 @@ public class GameManager : MonoBehaviour
     public static int PowerUP = 0;
 
 
+<<<<<<< HEAD
     public GameObject pUp1;
     public GameObject pUp2;
     public GameObject pUp3;
     public GameObject pUp4;
     public GameObject pUp5;
+=======
+    public  GameObject pUp1;
+    public  GameObject pUp2;
+    public  GameObject pUp3;
+    public  GameObject pUp4;
+    public  GameObject pUp5;
+>>>>>>> daa9ea4af439c0818d927aa98eba619887fca49b
 
 
 
@@ -22,7 +30,7 @@ public class GameManager : MonoBehaviour
 
 
     bool fireRate = false;
-    bool spreadShot = false;
+    static public bool spreadShot = false;
     bool speedBoost = false;
     bool shield = false;
     static public bool multiHit = false;
@@ -64,8 +72,7 @@ public class GameManager : MonoBehaviour
 
         multiHitActive();
 
-
-
+        spreadShotActive();
 
     }
 
@@ -264,6 +271,18 @@ public class GameManager : MonoBehaviour
         if (timerPower > 9.9)
         {
             pUp5.GetComponent<Image>().color = Color.grey;
+        }
+    }
+    void spreadShotActive()
+    {
+        if (PlayerShootTexte.spreadShotActive == true)
+        {
+            pUp2.GetComponent<Image>().color = Color.blue;
+        }
+
+        if (timerPower > 9.9)
+        {
+            pUp2.GetComponent<Image>().color = Color.grey;
         }
     }
 }

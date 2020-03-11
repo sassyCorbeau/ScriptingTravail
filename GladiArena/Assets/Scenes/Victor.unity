@@ -406,7 +406,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 887802644}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 6.96, y: 8.13, z: -6.86}
+  m_LocalPosition: {x: 6.58, y: 7.97, z: -6.86}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -442,7 +442,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a056b3b4741c83f4fa6dc430f506dbaf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 20
   jumpSpeed: 8
   gravity: 20
   fin: {fileID: 0}
@@ -517,13 +516,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 647154eb0db8fd544bd83c80ad9c24bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 20
-  tilt: 2
-  boundary:
-    xMin: 0
-    xMax: 0
-    zMin: 0
-    zMax: 0
   shotUp: {fileID: 238177664369108905, guid: 4d65de5c6c836624698fadac3e673613, type: 3}
   shotDown: {fileID: 7593996716588604754, guid: 94de3dee5a7f24b47ac5d8c2f3b312b2,
     type: 3}
@@ -538,7 +530,6 @@ MonoBehaviour:
     type: 3}
   shotDownLeft: {fileID: 4475446980691261303, guid: 8454ffe0be5784e4cb08ff8942f4451c,
     type: 3}
-  fireRate: 0.5
 --- !u!1 &1124435706
 GameObject:
   m_ObjectHideFlags: 0
@@ -851,6 +842,36 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1275159430}
   m_CullTransparentMesh: 0
+--- !u!1 &1556177431
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1556177432}
+  m_Layer: 0
+  m_Name: SpawnPoint3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1556177432
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1556177431}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -11.64, y: 0.2, z: -6.86}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1776610258
 GameObject:
   m_ObjectHideFlags: 0
@@ -860,7 +881,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1776610260}
-  - component: {fileID: 1776610261}
   - component: {fileID: 1776610259}
   m_Layer: 0
   m_Name: MonsterSpawner
@@ -876,16 +896,33 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1776610258}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: df09d3e900acea24db39b39320ecd195, type: 3}
+  m_Script: {fileID: 11500000, guid: 8ec957c39226de0499c7524ea320a1bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  waves:
+  - name: Wave1
+    enemy: {fileID: 992303712354684913, guid: 87b7112d8152f5140b618b05725dd3cb, type: 3}
+    count: 2
+    rate: 1
+  - name: Wavze2
+    enemy: {fileID: 992303712354684913, guid: 87b7112d8152f5140b618b05725dd3cb, type: 3}
+    count: 3
+    rate: 1
+  - name: Wave3
+    enemy: {fileID: 992303712354684913, guid: 87b7112d8152f5140b618b05725dd3cb, type: 3}
+    count: 5
+    rate: 2
   spawnPoints:
   - {fileID: 103388326}
   - {fileID: 513476899}
-  monsters:
+  - {fileID: 1556177432}
+  enemies:
   - {fileID: 992303712354684916, guid: 87b7112d8152f5140b618b05725dd3cb, type: 3}
+  - {fileID: 3060579972821872176, guid: 9090efc60e749de40b498e6a2a070ba5, type: 3}
+  timeBetweenWaves: 5
+  waveCountdown: 0
 --- !u!4 &1776610260
 Transform:
   m_ObjectHideFlags: 0
@@ -900,31 +937,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1776610261
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1776610258}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8ec957c39226de0499c7524ea320a1bb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  waves:
-  - enemy: {fileID: 992303712354684913, guid: 87b7112d8152f5140b618b05725dd3cb, type: 3}
-    count: 2
-    rate: 1
-  - enemy: {fileID: 992303712354684913, guid: 87b7112d8152f5140b618b05725dd3cb, type: 3}
-    count: 3
-    rate: 1
-  spawnPoints:
-  - {fileID: 103388326}
-  - {fileID: 513476899}
-  timeBetweenWaves: 5
-  waveCountdown: 2
-  state: 2
 --- !u!1 &1820512886
 GameObject:
   m_ObjectHideFlags: 0

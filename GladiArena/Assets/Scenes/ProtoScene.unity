@@ -3279,6 +3279,48 @@ PrefabInstance:
       propertyPath: fireRate
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 62768805829361726, guid: ef788e2a12996784dab99d1896d3bf0e,
+        type: 3}
+      propertyPath: shotDown
+      value: 
+      objectReference: {fileID: 7593996716588604754, guid: 94de3dee5a7f24b47ac5d8c2f3b312b2,
+        type: 3}
+    - target: {fileID: 62768805829361726, guid: ef788e2a12996784dab99d1896d3bf0e,
+        type: 3}
+      propertyPath: shotUp
+      value: 
+      objectReference: {fileID: 238177664369108905, guid: 4d65de5c6c836624698fadac3e673613,
+        type: 3}
+    - target: {fileID: 62768805829361726, guid: ef788e2a12996784dab99d1896d3bf0e,
+        type: 3}
+      propertyPath: shotLeft
+      value: 
+      objectReference: {fileID: 30991677610970633, guid: b284aedb2a4bdbc4faf0daba5f0310f1,
+        type: 3}
+    - target: {fileID: 62768805829361726, guid: ef788e2a12996784dab99d1896d3bf0e,
+        type: 3}
+      propertyPath: spreadShotDown
+      value: 
+      objectReference: {fileID: 8476445542393797597, guid: c5fba24feb9096141a95ccc04f777112,
+        type: 3}
+    - target: {fileID: 62768805829361726, guid: ef788e2a12996784dab99d1896d3bf0e,
+        type: 3}
+      propertyPath: spreadShotUp
+      value: 
+      objectReference: {fileID: 2794649561729707067, guid: 43b30b6d849b7b74fa57ed590a4d2f7e,
+        type: 3}
+    - target: {fileID: 62768805829361726, guid: ef788e2a12996784dab99d1896d3bf0e,
+        type: 3}
+      propertyPath: spreadShotLeft
+      value: 
+      objectReference: {fileID: 4177314343726337402, guid: de111b9442fec884e9468ab8a488fb79,
+        type: 3}
+    - target: {fileID: 62768805829361726, guid: ef788e2a12996784dab99d1896d3bf0e,
+        type: 3}
+      propertyPath: spreadShotRight
+      value: 
+      objectReference: {fileID: 9201285585564296305, guid: aa96e903afba9dd41a1e46f17bd0655e,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ef788e2a12996784dab99d1896d3bf0e, type: 3}
 --- !u!1001 &1574567273166838660
