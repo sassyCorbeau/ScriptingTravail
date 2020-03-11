@@ -19,9 +19,13 @@ public class GameManager : MonoBehaviour
     static public float timerPower = 0;
 
 
+<<<<<<< HEAD
+
+=======
+>>>>>>> 4edb0c9a264ae59f819496a4d85f1ad4987c94e8
 
     bool fireRate = false;
-    bool spreasShot = false;
+    bool spreadShot = false;
     bool speedBoost = false;
     bool shield = false;
     static public bool multiHit = false;
@@ -31,7 +35,7 @@ public class GameManager : MonoBehaviour
     void Start()
     {
         fireRate = false;
-        spreasShot = false;
+        spreadShot = false;
         speedBoost = false;
         shield = false;
         multiHit = false;
@@ -50,7 +54,7 @@ public class GameManager : MonoBehaviour
     }
 
     // Update is called once per frame
-    void FixedUpdate()
+    void Update()
     {
 
         PowerUPSwitch();
@@ -101,7 +105,7 @@ public class GameManager : MonoBehaviour
                 pUp2.GetComponent<Image>().color = Color.red;
                 if (Input.GetKeyDown("space"))
                 {
-                    spreasShot = true;
+                    spreadShot = true;
                     PowerUP = 0;
 
                     pUp2.GetComponent<Image>().color = Color.grey;
