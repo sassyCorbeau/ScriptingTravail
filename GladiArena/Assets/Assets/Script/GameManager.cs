@@ -19,10 +19,7 @@ public class GameManager : MonoBehaviour
     static public float timerPower = 0;
 
 
-<<<<<<< HEAD
 
-=======
->>>>>>> 4edb0c9a264ae59f819496a4d85f1ad4987c94e8
 
     bool fireRate = false;
     bool spreadShot = false;
