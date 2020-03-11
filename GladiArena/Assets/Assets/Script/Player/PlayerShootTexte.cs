@@ -28,7 +28,7 @@ public class PlayerShootTexte : MonoBehaviour
 
         if (GameManager.multiHit == true)
         {
-            GameManager.pUp5.GetComponent<Image>().color = Color.blue;
+           
             Debug.Log("Multihit = True");
             multiHitActive = true;
 
@@ -53,11 +53,11 @@ public class PlayerShootTexte : MonoBehaviour
             {
                 GameManager.multiHit = false;
                 Debug.Log("Multihit End");
-<<<<<<< HEAD
+
                 multiHitActive = false;
-=======
-                GameManager.pUp5.GetComponent<Image>().color = Color.grey;
->>>>>>> 036287096aa7ff5b8a4de43f4727c9fb6d204454
+
+                
+
                 PlayerShootTexte.fireRate = 0.5f;
                 GameManager.timerPower = 0;
                 return;
