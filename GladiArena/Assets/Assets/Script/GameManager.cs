@@ -19,10 +19,7 @@ public class GameManager : MonoBehaviour
     static public float timerPower = 0;
 
 
-<<<<<<< HEAD
 
-=======
->>>>>>> 4edb0c9a264ae59f819496a4d85f1ad4987c94e8
 
     bool fireRate = false;
     bool spreadShot = false;
@@ -64,6 +61,8 @@ public class GameManager : MonoBehaviour
         shieldPower();
 
         speedBoostPower();
+
+        multiHitActive();
 
 
 
@@ -252,6 +251,18 @@ public class GameManager : MonoBehaviour
 
 
 
+        }
+    }
+    void multiHitActive()
+    {
+        if (PlayerShootTexte.multiHitActive == true)
+        {
+            pUp5.GetComponent<Image>().color = Color.blue;
+        }
+
+        if (timerPower > 9.9)
+        {
+            pUp5.GetComponent<Image>().color = Color.grey;
         }
     }
 }

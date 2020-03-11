@@ -17,6 +17,7 @@ public class PlayerShootTexte : MonoBehaviour
     public GameObject shotDownRight;
     public GameObject shotDownLeft;
     public static float fireRate = 0.5f; // La cadence 
+    public static bool multiHitActive = false; // De quoi ajouter la gestion du hud qui se trouve dans le gamemanager
 
     private float nextFire; // La variable pour la cadence
 
@@ -28,6 +29,8 @@ public class PlayerShootTexte : MonoBehaviour
         {
 
             Debug.Log("Multihit = True");
+            multiHitActive = true;
+
 
             GameManager.timerPower = GameManager.timerPower + Time.deltaTime;
 
@@ -49,6 +52,7 @@ public class PlayerShootTexte : MonoBehaviour
             {
                 GameManager.multiHit = false;
                 Debug.Log("Multihit End");
+                multiHitActive = false;
                 PlayerShootTexte.fireRate = 0.5f;
                 GameManager.timerPower = 0;
                 return;
