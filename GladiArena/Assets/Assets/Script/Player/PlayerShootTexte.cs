@@ -78,35 +78,43 @@ public class PlayerShootTexte : MonoBehaviour
                 nextFire = Time.time + fireRate;
                 Instantiate(shotRight, transform.transform);
             }
+
+            // MultiHit
+
+            if (GameManager.multiHit == true)
+            {
+
+                Debug.Log("Multihit = True");
+
+                GameManager.timerPower = GameManager.timerPower + Time.deltaTime;
+
+                Debug.Log("Multihit changée");
+                if (Input.GetKey(KeyCode.RightArrow) || (Input.GetKey(KeyCode.LeftArrow) || (Input.GetKey(KeyCode.DownArrow) || (Input.GetKey(KeyCode.UpArrow)))))
+                {
+                    nextFire = Time.time + fireRate;
+                    Instantiate(shotUp, transform.transform);
+                    Instantiate(shotRight, transform.transform);
+                    Instantiate(shotLeft, transform.transform);
+                    Instantiate(shotDown, transform.transform);
+                    Instantiate(shotDownLeft, transform.transform);
+                    Instantiate(shotDownRight, transform.transform);
+                    Instantiate(shotUpLeft, transform.transform);
+                    Instantiate(shotUpRight, transform.transform);
+                }
+                if (GameManager.timerPower > 10)
+                {
+                    GameManager.multiHit = false;
+                    Debug.Log("Multihit End");
+                    PlayerShootTexte.fireRate = 0.5f;
+                    GameManager.timerPower = 0;
+                    return;
+                }
+            }
         }
 
-        // MultiHit
+        
 
-        if (GameManager.multiHit == true)
-        {
-
-            Debug.Log("Multihit = True");
-
-            GameManager.timerPower = GameManager.timerPower + Time.deltaTime;
-
-            Debug.Log("Multihit changée");
-            if (Input.GetKey(KeyCode.RightArrow) || (Input.GetKey(KeyCode.LeftArrow) || (Input.GetKey(KeyCode.DownArrow) || (Input.GetKey(KeyCode.UpArrow)))))
-            {
-                nextFire = Time.time + fireRate;
-                Instantiate(shotUp, transform.transform);
-                Instantiate(shotRight, transform.transform);
-                Instantiate(shotLeft, transform.transform);
-                Instantiate(shotDown, transform.transform);
-            }
-            if (GameManager.timerPower > 10)
-            {
-                GameManager.multiHit = false;
-                Debug.Log("Multihit End");
-                PlayerShootTexte.fireRate = 0.5f;
-                GameManager.timerPower = 0;
-                return;
-            }
-        }
+        
 
     }
 }
