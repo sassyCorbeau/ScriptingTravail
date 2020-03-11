@@ -62,6 +62,8 @@ public class GameManager : MonoBehaviour
 
         speedBoostPower();
 
+        multiHitActive();
+
 
 
 
@@ -249,6 +251,18 @@ public class GameManager : MonoBehaviour
 
 
 
+        }
+    }
+    void multiHitActive()
+    {
+        if (PlayerShootTexte.multiHitActive == true)
+        {
+            pUp5.GetComponent<Image>().color = Color.blue;
+        }
+
+        if (timerPower > 9.9)
+        {
+            pUp5.GetComponent<Image>().color = Color.grey;
         }
     }
 }
