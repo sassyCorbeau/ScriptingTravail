@@ -19,16 +19,66 @@ public class PlayerShootTexte : MonoBehaviour
     public GameObject shotDownLeft;
     public static float fireRate = 0.5f; // La cadence 
     public static bool multiHitActive = false; // De quoi ajouter la gestion du hud qui se trouve dans le gamemanager
+    public static bool spreadShotActive = false; // De quoi ajouter la gestion du hud qui se trouve dans le gamemanager
+    public GameObject spreadShotUp; // Les différents tirs du spreadshot
+    public GameObject spreadShotDown;
+    public GameObject spreadShotLeft;
+    public GameObject spreadShotRight;
 
     private float nextFire; // La variable pour la cadence
 
     void Update()
-    {
+    {   
+        // Spreadshot
+
+        if (GameManager.spreadShot == true)
+        {
+            Debug.Log("SpreadShot = True");
+            spreadShotActive = true;
+
+
+            GameManager.timerPower = GameManager.timerPower + Time.deltaTime;
+
+            if (Input.GetKey(KeyCode.UpArrow) && Time.time > nextFire)
+            {
+                nextFire = Time.time + fireRate;
+                Instantiate(spreadShotUp, transform.transform);
+
+            }
+            if (Input.GetKey(KeyCode.DownArrow) && Time.time > nextFire)
+            {
+                nextFire = Time.time + fireRate;
+                Instantiate(spreadShotDown, transform.transform);
+            }
+            if (Input.GetKey(KeyCode.LeftArrow) && Time.time > nextFire)
+            {
+                nextFire = Time.time + fireRate;
+                Instantiate(spreadShotLeft, transform.transform);
+            }
+            if (Input.GetKey(KeyCode.RightArrow) && Time.time > nextFire)
+            {
+                nextFire = Time.time + fireRate;
+                Instantiate(spreadShotRight, transform.transform);
+            }
+
+            if (GameManager.timerPower > 10)
+            {
+                GameManager.spreadShot = false;
+                Debug.Log("SpreadShot End");
+
+                spreadShotActive = false;
+
+
+                PlayerShootTexte.fireRate = 0.5f;
+                GameManager.timerPower = 0;
+                return;
+            }
+        }
+
         // MultiHit
 
         if (GameManager.multiHit == true)
         {
-            GameManager.pUp5.GetComponent<Image>().color = Color.blue;
             Debug.Log("Multihit = True");
             multiHitActive = true;
 
@@ -56,7 +106,10 @@ public class PlayerShootTexte : MonoBehaviour
 
                 multiHitActive = false;
 
+<<<<<<< HEAD
+=======
                 GameManager.pUp5.GetComponent<Image>().color = Color.grey;
+>>>>>>> 2accffcda5de4c25f651b8b236e19bc5a367d614
 
                 PlayerShootTexte.fireRate = 0.5f;
                 GameManager.timerPower = 0;
