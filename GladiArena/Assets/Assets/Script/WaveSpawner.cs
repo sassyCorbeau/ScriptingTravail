@@ -21,6 +21,7 @@ public class WaveSpawner : MonoBehaviour
     private int nextWave = 0;
 
     public Transform[] spawnPoints;
+    public GameObject[] enemies;
 
     public float timeBetweenWaves = 5f;
     public float waveCountdown;
@@ -116,6 +117,7 @@ public class WaveSpawner : MonoBehaviour
     {
         Debug.Log("Spawning Enemy: " + _enemy.name);
         Transform _sp = spawnPoints[Random.Range(0, spawnPoints.Length)];
-        Instantiate(_enemy, _sp.position, _sp.rotation);       
+        GameObject _monsters = enemies[Random.Range(0, enemies.Length)];
+        Instantiate(_monsters, _sp.position, _sp.rotation);       
     }
 }
