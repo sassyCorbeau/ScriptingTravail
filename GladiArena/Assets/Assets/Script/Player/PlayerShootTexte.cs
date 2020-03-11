@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.UI;
 
 [System.Serializable]
 
@@ -26,7 +27,7 @@ public class PlayerShootTexte : MonoBehaviour
 
         if (GameManager.multiHit == true)
         {
-
+            GameManager.pUp5.GetComponent<Image>().color = Color.blue;
             Debug.Log("Multihit = True");
 
             GameManager.timerPower = GameManager.timerPower + Time.deltaTime;
@@ -49,6 +50,7 @@ public class PlayerShootTexte : MonoBehaviour
             {
                 GameManager.multiHit = false;
                 Debug.Log("Multihit End");
+                GameManager.pUp5.GetComponent<Image>().color = Color.grey;
                 PlayerShootTexte.fireRate = 0.5f;
                 GameManager.timerPower = 0;
                 return;
