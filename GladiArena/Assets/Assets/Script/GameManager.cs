@@ -8,11 +8,11 @@ public class GameManager : MonoBehaviour
     public static int PowerUP = 0;
 
 
-    public GameObject pUp1;
-    public GameObject pUp2;
-    public GameObject pUp3;
-    public GameObject pUp4;
-    public GameObject pUp5;
+    public static GameObject pUp1;
+    public static GameObject pUp2;
+    public static GameObject pUp3;
+    public static GameObject pUp4;
+    public static GameObject pUp5;
 
 
 
