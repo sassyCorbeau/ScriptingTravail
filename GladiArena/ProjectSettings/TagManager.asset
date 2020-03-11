@@ -8,6 +8,7 @@ TagManager:
   - bad
   - bullet
   - PowerUP
+  - Enemy
   layers:
   - Default
   - TransparentFX

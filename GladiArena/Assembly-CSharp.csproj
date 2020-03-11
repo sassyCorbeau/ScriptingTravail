@@ -63,14 +63,14 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Assets\Script\Bullet.cs" />
-    <Compile Include="Assets\Assets\Script\BulletDown.cs" />
-    <Compile Include="Assets\Assets\Script\BulletDownLeft.cs" />
-    <Compile Include="Assets\Assets\Script\BulletDownRight.cs" />
-    <Compile Include="Assets\Assets\Script\BulletLeft.cs" />
-    <Compile Include="Assets\Assets\Script\BulletRight.cs" />
-    <Compile Include="Assets\Assets\Script\BulletUpLeft.cs" />
-    <Compile Include="Assets\Assets\Script\BulletUpRight.cs" />
+    <Compile Include="Assets\Assets\Script\Bullet\Bullet.cs" />
+    <Compile Include="Assets\Assets\Script\Bullet\BulletDown.cs" />
+    <Compile Include="Assets\Assets\Script\Bullet\BulletDownLeft.cs" />
+    <Compile Include="Assets\Assets\Script\Bullet\BulletDownRight.cs" />
+    <Compile Include="Assets\Assets\Script\Bullet\BulletLeft.cs" />
+    <Compile Include="Assets\Assets\Script\Bullet\BulletRight.cs" />
+    <Compile Include="Assets\Assets\Script\Bullet\BulletUpLeft.cs" />
+    <Compile Include="Assets\Assets\Script\Bullet\BulletUpRight.cs" />
     <Compile Include="Assets\Assets\Script\CreateOnDestroy.cs" />
     <Compile Include="Assets\Assets\Script\EnemyFollow.cs" />
     <Compile Include="Assets\Assets\Script\Game.cs" />
@@ -78,13 +78,13 @@
     <Compile Include="Assets\Assets\Script\MainMenu.cs" />
     <Compile Include="Assets\Assets\Script\MonsterSpawner.cs" />
     <Compile Include="Assets\Assets\Script\PauseMenu.cs" />
-    <Compile Include="Assets\Assets\Script\PlayerHP.cs" />
-    <Compile Include="Assets\Assets\Script\PlayerMvt.cs" />
-    <Compile Include="Assets\Assets\Script\PlayerShoot.cs" />
-    <Compile Include="Assets\Assets\Script\PlayerShootTexte.cs" />
+    <Compile Include="Assets\Assets\Script\Player\PlayerHP.cs" />
+    <Compile Include="Assets\Assets\Script\Player\PlayerMvt.cs" />
+    <Compile Include="Assets\Assets\Script\Player\PlayerShootTexte.cs" />
     <Compile Include="Assets\Assets\Script\PowerUP\PowerUP_Collect.cs" />
     <Compile Include="Assets\Assets\Script\ScoreCounter.cs" />
     <Compile Include="Assets\Assets\Script\TextHover.cs" />
+    <Compile Include="Assets\Assets\Script\WaveSpawner.cs" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface-Mobile.shader" />
     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro_Properties.cginc" />
@@ -104,6 +104,7 @@
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Sprite.shader" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface.shader" />
     <Reference Include="Unity.Timeline.Editor">
+<<<<<<< HEAD
       <HintPath>D:/Utilisateur/Documents/Gladiarena/Gladiarena_Projet/GladiArena/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VSCode.Editor">
@@ -129,6 +130,61 @@
     </Reference>
     <Reference Include="UnityEditor.UI">
       <HintPath>D:/Utilisateur/Documents/Gladiarena/Gladiarena_Projet/GladiArena/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+=======
+<<<<<<< HEAD
+      <HintPath>C:/Users/etctu/Documents/GladiArena/GladiArena/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.VSCode.Editor">
+      <HintPath>C:/Users/etctu/Documents/GladiArena/GladiArena/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.TextMeshPro.Editor">
+      <HintPath>C:/Users/etctu/Documents/GladiArena/GladiArena/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>C:/Users/etctu/Documents/GladiArena/GladiArena/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Timeline">
+      <HintPath>C:/Users/etctu/Documents/GladiArena/GladiArena/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.CollabProxy.Editor">
+      <HintPath>C:/Users/etctu/Documents/GladiArena/GladiArena/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Rider.Editor">
+      <HintPath>C:/Users/etctu/Documents/GladiArena/GladiArena/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.TextMeshPro">
+      <HintPath>C:/Users/etctu/Documents/GladiArena/GladiArena/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.UI">
+      <HintPath>C:/Users/etctu/Documents/GladiArena/GladiArena/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+=======
+      <HintPath>D:/EArt/Coding_Scripting/ProjetScript/GladiArena/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.VSCode.Editor">
+      <HintPath>D:/EArt/Coding_Scripting/ProjetScript/GladiArena/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.TextMeshPro.Editor">
+      <HintPath>D:/EArt/Coding_Scripting/ProjetScript/GladiArena/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>D:/EArt/Coding_Scripting/ProjetScript/GladiArena/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Timeline">
+      <HintPath>D:/EArt/Coding_Scripting/ProjetScript/GladiArena/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.CollabProxy.Editor">
+      <HintPath>D:/EArt/Coding_Scripting/ProjetScript/GladiArena/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Rider.Editor">
+      <HintPath>D:/EArt/Coding_Scripting/ProjetScript/GladiArena/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.TextMeshPro">
+      <HintPath>D:/EArt/Coding_Scripting/ProjetScript/GladiArena/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.UI">
+      <HintPath>D:/EArt/Coding_Scripting/ProjetScript/GladiArena/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+>>>>>>> 036287096aa7ff5b8a4de43f4727c9fb6d204454
+>>>>>>> 00ee8c7f34f8dca6c7925ffe2dd6f0d82c63d36f
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.2.15f1/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
