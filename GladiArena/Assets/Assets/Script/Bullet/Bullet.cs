@@ -15,7 +15,7 @@ public class Bullet : MonoBehaviour
     void Update()
     {
         
-        GetComponent<Rigidbody>().AddForce(0f, 40f, 0f);
+        GetComponent<Rigidbody>().velocity = new Vector3 (0f, 40f, 0f);
         
 
 
