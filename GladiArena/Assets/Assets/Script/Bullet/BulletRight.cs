@@ -15,7 +15,8 @@ public class BulletRight : MonoBehaviour
     void Update()
     {
         
-        GetComponent<Rigidbody>().AddForce(40f, 0f, 0f);
+        GetComponent<Rigidbody>().velocity = new Vector3 (40f, 0f, 0f);
+
 
     }
     private void OnTriggerEnter(Collider other)
@@ -23,6 +24,10 @@ public class BulletRight : MonoBehaviour
         if (other.CompareTag("stop"))
         {
             Destroy(gameObject);
-        }
+    }
+        if (other.CompareTag("bad"))
+        {
+            Destroy(gameObject);
+    }
     }
 }

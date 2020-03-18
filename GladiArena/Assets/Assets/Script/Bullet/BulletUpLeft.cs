@@ -14,8 +14,8 @@ public class BulletUpLeft : MonoBehaviour
 
     void Update()
     {
-        
-        GetComponent<Rigidbody>().AddForce(-40f, 40f, 0f);
+
+        GetComponent<Rigidbody>().velocity = new Vector3(-40f, 40f, 0f);
 
     }
     private void OnTriggerEnter(Collider other)
