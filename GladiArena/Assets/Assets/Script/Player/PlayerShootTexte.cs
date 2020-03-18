@@ -145,7 +145,7 @@ public class PlayerShootTexte : MonoBehaviour
             }
         }
 
-<<<<<<< HEAD
+
 
         // MultiHit
 
@@ -188,9 +188,7 @@ public class PlayerShootTexte : MonoBehaviour
             }
         }
 
-=======
 
->>>>>>> de66cdafd02483eb99570f41c3b7e39e4a8531ed
 
         // Shot
 

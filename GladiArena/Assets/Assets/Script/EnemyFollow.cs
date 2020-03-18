@@ -43,8 +43,9 @@ public class EnemyFollow : MonoBehaviour
     {
         if (other.gameObject.CompareTag("bullet"))
         {
+            GameManager.score += 50;
             Destroy(gameObject);
-            ScoreCounter.currentScore = ScoreCounter.currentScore + 50f;
+            
         }
     }
 }
