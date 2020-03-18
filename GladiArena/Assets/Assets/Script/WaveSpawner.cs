@@ -9,20 +9,29 @@ public class WaveSpawner : MonoBehaviour
    [System.Serializable]
    public class Wave
     {
-        public string name;
+        //remplir avec un ennemi au hasard c'est pas important
         public Transform enemy;
+
+        //remplir avec nombre d'ennemis de la première vague
         public int count;
+
+        //remplir avec 1 ou 2 tkt ça passe
         public float rate;
     }
 
+
   
 
-    public Wave[] waves;
+    public Wave waves;
     private int nextWave = 0;
 
+    //remplir avec 12 en size (3 par côté) pour forcer le joueur à se déplacer
     public Transform[] spawnPoints;
+
+    //remplir avec les types d'ennemis et leurs prefabs
     public GameObject[] enemies;
 
+    //à changer au besoin
     public float timeBetweenWaves = 5f;
     public float waveCountdown;
     private float searchCountdown = 1f;
@@ -54,11 +63,13 @@ public class WaveSpawner : MonoBehaviour
             }
         }
 
+
+
         if(waveCountdown <= 0)
         {
             if (state != SpawnState.SPAWNING)
             {
-                StartCoroutine ( SpawnWave ( waves[nextWave] ) );
+                StartCoroutine ( SpawnWave ( waves ) );
             }
         }
         else
@@ -72,18 +83,14 @@ public class WaveSpawner : MonoBehaviour
         Debug.Log("Wave End");
         state = SpawnState.COUNTING;
         waveCountdown = timeBetweenWaves;
+       
+        nextWave = -1;
 
-        
-
-        if (nextWave + 1 > waves.Length - 1)
-        {
-            nextWave = -1;
-            Debug.Log("All Waves Complete. Looping");
-        }
-
-        nextWave++;
-
+        //à changer au besoin
+        waves.count += 2;
     }
+
+    
 
     bool EnemyIsAlive()
     {
@@ -117,9 +124,11 @@ public class WaveSpawner : MonoBehaviour
 
     void SpawnEnemy(Transform _enemy)
     {
-        Debug.Log("Spawning Enemy: " + _enemy.name);
-        Transform _sp = spawnPoints[Random.Range(0, spawnPoints.Length)];
-        GameObject _monsters = enemies[Random.Range(0, enemies.Length)];
-        Instantiate(_monsters, _sp.position, _sp.rotation);       
+
+            Debug.Log("Spawning Enemy: " + _enemy.name);
+            Transform _sp = spawnPoints[Random.Range(0, spawnPoints.Length)];
+            GameObject _monsters = enemies[Random.Range(0, enemies.Length)];
+            Instantiate(_monsters, _sp.position, _sp.rotation);
+
     }
 }
