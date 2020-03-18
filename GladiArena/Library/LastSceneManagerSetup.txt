@@ -1,9 +1,5 @@
 sceneSetups:
-<<<<<<< HEAD
 - path: Assets/Scenes/JB.unity
-=======
-- path: Assets/Scenes/ProtoScene.unity
->>>>>>> daa9ea4af439c0818d927aa98eba619887fca49b
   isLoaded: 1
   isActive: 1
   isSubScene: 0

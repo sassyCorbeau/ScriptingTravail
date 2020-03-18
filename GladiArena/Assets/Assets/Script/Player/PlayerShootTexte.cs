@@ -79,10 +79,7 @@ public class PlayerShootTexte : MonoBehaviour
 
         if (GameManager.multiHit == true)
         {
-<<<<<<< HEAD
-           
-=======
->>>>>>> daa9ea4af439c0818d927aa98eba619887fca49b
+
             Debug.Log("Multihit = True");
             multiHitActive = true;
 
@@ -110,14 +107,8 @@ public class PlayerShootTexte : MonoBehaviour
 
                 multiHitActive = false;
 
-<<<<<<< HEAD
-                
-=======
-<<<<<<< HEAD
-=======
                 GameManager.pUp5.GetComponent<Image>().color = Color.grey;
->>>>>>> 2accffcda5de4c25f651b8b236e19bc5a367d614
->>>>>>> daa9ea4af439c0818d927aa98eba619887fca49b
+
 
                 PlayerShootTexte.fireRate = 0.5f;
                 GameManager.timerPower = 0;

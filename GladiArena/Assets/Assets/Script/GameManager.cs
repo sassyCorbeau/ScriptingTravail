@@ -8,19 +8,15 @@ public class GameManager : MonoBehaviour
     public static int PowerUP = 0;
 
 
-<<<<<<< HEAD
+
     public GameObject pUp1;
     public GameObject pUp2;
     public GameObject pUp3;
     public GameObject pUp4;
     public GameObject pUp5;
-=======
-    public  GameObject pUp1;
-    public  GameObject pUp2;
-    public  GameObject pUp3;
-    public  GameObject pUp4;
-    public  GameObject pUp5;
->>>>>>> daa9ea4af439c0818d927aa98eba619887fca49b
+
+
+
 
 
 
