@@ -1869,6 +1869,8 @@ MonoBehaviour:
   pUp3: {fileID: 184329073}
   pUp4: {fileID: 184329072}
   pUp5: {fileID: 184329071}
+  scoreDisplay: {fileID: 1645281853}
+  score: 0
 --- !u!4 &875670274
 Transform:
   m_ObjectHideFlags: 0
