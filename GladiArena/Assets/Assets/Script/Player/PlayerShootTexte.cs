@@ -24,11 +24,54 @@ public class PlayerShootTexte : MonoBehaviour
     public GameObject spreadShotDown;
     public GameObject spreadShotLeft;
     public GameObject spreadShotRight;
+    public GameObject spreadShotUpLeft;
+    public GameObject spreadshotUpRight;
+    public GameObject spreadshotDownLeft;
+    public GameObject spreadshotDownRIght;
 
     private float nextFire; // La variable pour la cadence
 
     void Update()
     {   
+        // MultiHit
+
+        if (GameManager.multiHit == true)
+        {
+            Debug.Log("Multihit = True");
+            multiHitActive = true;
+
+
+            GameManager.timerPower = GameManager.timerPower + Time.deltaTime;
+
+            Debug.Log("Multihit changée");
+            if (Input.GetKey(KeyCode.RightArrow) && Time.time > nextFire || (Input.GetKey(KeyCode.LeftArrow) && Time.time > nextFire || (Input.GetKey(KeyCode.DownArrow) && Time.time > nextFire || (Input.GetKey(KeyCode.UpArrow) && Time.time > nextFire))))
+            {
+                nextFire = Time.time + fireRate;
+                Instantiate(shotUp, transform.transform);
+                Instantiate(shotRight, transform.transform);
+                Instantiate(shotLeft, transform.transform);
+                Instantiate(shotDown, transform.transform);
+                Instantiate(shotDownLeft, transform.transform);
+                Instantiate(shotDownRight, transform.transform);
+                Instantiate(shotUpLeft, transform.transform);
+                Instantiate(shotUpRight, transform.transform);
+
+            }
+            if (GameManager.timerPower > 10)
+            {
+                GameManager.multiHit = false;
+                Debug.Log("Multihit End");
+
+                multiHitActive = false;
+
+
+
+
+                PlayerShootTexte.fireRate = 0.5f;
+                GameManager.timerPower = 0;
+                return;
+            }
+        }
         // Spreadshot
 
         if (GameManager.spreadShot == true)
@@ -38,6 +81,31 @@ public class PlayerShootTexte : MonoBehaviour
 
 
             GameManager.timerPower = GameManager.timerPower + Time.deltaTime;
+
+            if (Input.GetKey(KeyCode.LeftArrow) && Time.time > nextFire && Input.GetKey(KeyCode.UpArrow))
+            {
+                nextFire = Time.time + fireRate;
+                Instantiate(spreadShotUpLeft, transform.transform);
+                return;
+            }
+            if (Input.GetKey(KeyCode.RightArrow) && Time.time > nextFire && Input.GetKey(KeyCode.UpArrow))
+            {
+                nextFire = Time.time + fireRate;
+                Instantiate(spreadshotUpRight, transform.transform);
+                return;
+            }
+            if (Input.GetKey(KeyCode.DownArrow) && Time.time > nextFire && Input.GetKey(KeyCode.LeftArrow))
+            {
+                nextFire = Time.time + fireRate;
+                Instantiate(spreadshotDownLeft, transform.transform);
+                return;
+            }
+            if (Input.GetKey(KeyCode.DownArrow) && Input.GetKey(KeyCode.RightArrow) && Time.time > nextFire)
+            {
+                nextFire = Time.time + fireRate;
+                Instantiate(spreadshotDownRIght, transform.transform);
+                return;
+            }
 
             if (Input.GetKey(KeyCode.UpArrow) && Time.time > nextFire)
             {
@@ -60,6 +128,8 @@ public class PlayerShootTexte : MonoBehaviour
                 nextFire = Time.time + fireRate;
                 Instantiate(spreadShotRight, transform.transform);
             }
+            
+
 
             if (GameManager.timerPower > 10)
             {
@@ -75,10 +145,14 @@ public class PlayerShootTexte : MonoBehaviour
             }
         }
 
+<<<<<<< HEAD
+        
+=======
         // MultiHit
 
         if (GameManager.multiHit == true)
         {
+
             Debug.Log("Multihit = True");
             multiHitActive = true;
 
@@ -114,6 +188,7 @@ public class PlayerShootTexte : MonoBehaviour
                 return;
             }
         }
+>>>>>>> 312c94f4f626758ebd6dd1bd0a418325036df6ca
 
         // Shot
 

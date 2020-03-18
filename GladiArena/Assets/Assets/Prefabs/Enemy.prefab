@@ -124,7 +124,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 112
   m_CollisionDetection: 0
 --- !u!65 &3060579972821872183
 BoxCollider:
@@ -151,4 +151,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 587b839b1328aef43af51c967aa42b64, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  powerUp: {fileID: 3914163969454668152, guid: 2a4a34770518cbc448de7439cdd76632, type: 3}
+  powerUp: {fileID: 7129298622702279938, guid: e2acd64b193c29f4cae30d129901b617, type: 3}
