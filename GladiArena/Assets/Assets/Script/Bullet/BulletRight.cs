@@ -23,6 +23,10 @@ public class BulletRight : MonoBehaviour
         if (other.CompareTag("stop"))
         {
             Destroy(gameObject);
-        }
+    }
+        if (other.CompareTag("bad"))
+        {
+            Destroy(gameObject);
+    }
     }
 }
