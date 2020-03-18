@@ -20,7 +20,7 @@ public class GameManager : MonoBehaviour
     static public float timerPower = 0;
 
     public static int tempScoreUp = 0;
-    public int score = 0;
+    public static int score = 0;
 
     bool fireRate = false;
     static public bool spreadShot = false;

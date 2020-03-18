@@ -147,6 +147,49 @@ public class PlayerShootTexte : MonoBehaviour
 
 
 
+        // MultiHit
+
+        if (GameManager.multiHit == true)
+        {
+
+            Debug.Log("Multihit = True");
+            multiHitActive = true;
+
+
+            GameManager.timerPower = GameManager.timerPower + Time.deltaTime;
+
+            Debug.Log("Multihit changée");
+            if (Input.GetKey(KeyCode.RightArrow) && Time.time > nextFire || (Input.GetKey(KeyCode.LeftArrow) && Time.time > nextFire || (Input.GetKey(KeyCode.DownArrow) && Time.time > nextFire || (Input.GetKey(KeyCode.UpArrow) && Time.time > nextFire))))
+            {
+                nextFire = Time.time + fireRate;
+                Instantiate(shotUp, transform.transform);
+                Instantiate(shotRight, transform.transform);
+                Instantiate(shotLeft, transform.transform);
+                Instantiate(shotDown, transform.transform);
+                Instantiate(shotDownLeft, transform.transform);
+                Instantiate(shotDownRight, transform.transform);
+                Instantiate(shotUpLeft, transform.transform);
+                Instantiate(shotUpRight, transform.transform);
+                
+            }
+            if (GameManager.timerPower > 10)
+            {
+                GameManager.multiHit = false;
+                Debug.Log("Multihit End");
+
+                multiHitActive = false;
+
+
+
+
+                PlayerShootTexte.fireRate = 0.5f;
+                GameManager.timerPower = 0;
+                return;
+            }
+        }
+
+
+
         // Shot
 
         if (GameManager.multiHit == false)
