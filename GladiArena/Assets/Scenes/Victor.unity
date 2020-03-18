@@ -906,18 +906,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   waves:
-  - name: Wave1
-    enemy: {fileID: 992303712354684913, guid: 87b7112d8152f5140b618b05725dd3cb, type: 3}
-    count: 2
-    rate: 1
-  - name: Wavze2
     enemy: {fileID: 992303712354684913, guid: 87b7112d8152f5140b618b05725dd3cb, type: 3}
     count: 3
     rate: 1
-  - name: Wave3
-    enemy: {fileID: 992303712354684913, guid: 87b7112d8152f5140b618b05725dd3cb, type: 3}
-    count: 5
-    rate: 2
   spawnPoints:
   - {fileID: 103388326}
   - {fileID: 513476899}
