@@ -145,9 +145,7 @@ public class PlayerShootTexte : MonoBehaviour
             }
         }
 
-<<<<<<< HEAD
-        
-=======
+
         // MultiHit
 
         if (GameManager.multiHit == true)
@@ -188,7 +186,7 @@ public class PlayerShootTexte : MonoBehaviour
                 return;
             }
         }
->>>>>>> 312c94f4f626758ebd6dd1bd0a418325036df6ca
+
 
         // Shot
 
