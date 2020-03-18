@@ -1,5 +1,17 @@
 sceneSetups:
+<<<<<<< HEAD
 - path: Assets/Scenes/MenuScene.unity
+=======
+<<<<<<< HEAD
+- path: Assets/Scenes/ProtoScene.unity
+=======
+<<<<<<< HEAD
+- path: Assets/Scenes/MenuScene.unity
+=======
+- path: Assets/Scenes/JB.unity
+>>>>>>> de66cdafd02483eb99570f41c3b7e39e4a8531ed
+>>>>>>> 328c32889ba1f3985c861899085e29ceeda723bb
+>>>>>>> 32ec115357d5e1e3da08ee693dc3d8066e292137
   isLoaded: 1
   isActive: 1
   isSubScene: 0
