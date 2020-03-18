@@ -530,6 +530,10 @@ MonoBehaviour:
     type: 3}
   shotDownLeft: {fileID: 4475446980691261303, guid: 8454ffe0be5784e4cb08ff8942f4451c,
     type: 3}
+  spreadShotUp: {fileID: 0}
+  spreadShotDown: {fileID: 0}
+  spreadShotLeft: {fileID: 0}
+  spreadShotRight: {fileID: 0}
 --- !u!1 &1124435706
 GameObject:
   m_ObjectHideFlags: 0

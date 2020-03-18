@@ -73,14 +73,16 @@ public class WaveSpawner : MonoBehaviour
         state = SpawnState.COUNTING;
         waveCountdown = timeBetweenWaves;
 
-        if(nextWave + 1 > waves.Length - 1)
+        
+
+        if (nextWave + 1 > waves.Length - 1)
         {
-            nextWave = 0;
+            nextWave = -1;
             Debug.Log("All Waves Complete. Looping");
         }
-       
 
         nextWave++;
+
     }
 
     bool EnemyIsAlive()

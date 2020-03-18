@@ -107,7 +107,11 @@ public class PlayerShootTexte : MonoBehaviour
 
                 multiHitActive = false;
 
+<<<<<<< HEAD
                 GameManager.pUp5.GetComponent<Image>().color = Color.grey;
+=======
+
+>>>>>>> 3525745c874805fe83d30c46ece723da13fea9dc
 
 
                 PlayerShootTexte.fireRate = 0.5f;
