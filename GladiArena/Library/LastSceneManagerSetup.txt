@@ -1,5 +1,13 @@
 sceneSetups:
+<<<<<<< HEAD
 - path: Assets/Scenes/ProtoScene.unity
+=======
+<<<<<<< HEAD
+- path: Assets/Scenes/JB.unity
+=======
+- path: Assets/Scenes/Ludivine.unity
+>>>>>>> 42dcb1497f3556632c341293ce068e9f85aa47c6
+>>>>>>> 312c94f4f626758ebd6dd1bd0a418325036df6ca
   isLoaded: 1
   isActive: 1
   isSubScene: 0

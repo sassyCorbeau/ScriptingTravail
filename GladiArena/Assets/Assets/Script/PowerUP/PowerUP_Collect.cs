@@ -22,6 +22,10 @@ public class PowerUP_Collect : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             Pickup(other);
+            if (GameManager.PowerUP > 5)
+            {
+                GameManager.tempScoreUp += 1000;
+            }
         }
     }
 
