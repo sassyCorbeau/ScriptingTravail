@@ -25,7 +25,7 @@ public class WaveSpawner : MonoBehaviour
     public Wave waves;
     private int nextWave = 0;
 
-    //remplir avec 4 en size et les spawnpoints
+    //remplir avec 12 en size (3 par côté) pour forcer le joueur à se déplacer
     public Transform[] spawnPoints;
 
     //remplir avec les types d'ennemis et leurs prefabs

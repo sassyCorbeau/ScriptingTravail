@@ -1,9 +1,5 @@
 sceneSetups:
-<<<<<<< HEAD
-- path: Assets/Scenes/MenuScene.unity
-=======
-- path: Assets/Scenes/ProtoScene.unity
->>>>>>> 91bb6150205527dfb768a2e744796b599d4f582d
+- path: Assets/Scenes/Victor.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0
