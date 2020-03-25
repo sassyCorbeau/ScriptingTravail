@@ -378,6 +378,12 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 81057296}
   m_CullTransparentMesh: 0
+--- !u!1 &181802776 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6545141323799739234, guid: 32c65316ca8d3f740afeb0d32a1819a2,
+    type: 3}
+  m_PrefabInstance: {fileID: 184329070}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &184329070
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -385,6 +391,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 685328507}
     m_Modifications:
+    - target: {fileID: 6545141323429392248, guid: 32c65316ca8d3f740afeb0d32a1819a2,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 168
+      objectReference: {fileID: 0}
+    - target: {fileID: 6545141323429392248, guid: 32c65316ca8d3f740afeb0d32a1819a2,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 328
+      objectReference: {fileID: 0}
     - target: {fileID: 6545141323679817954, guid: 32c65316ca8d3f740afeb0d32a1819a2,
         type: 3}
       propertyPath: m_IsActive
@@ -453,12 +469,12 @@ PrefabInstance:
     - target: {fileID: 6545141323799739238, guid: 32c65316ca8d3f740afeb0d32a1819a2,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 358
+      value: 405
       objectReference: {fileID: 0}
     - target: {fileID: 6545141323799739238, guid: 32c65316ca8d3f740afeb0d32a1819a2,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 173
+      value: 184
       objectReference: {fileID: 0}
     - target: {fileID: 6545141323799739238, guid: 32c65316ca8d3f740afeb0d32a1819a2,
         type: 3}
@@ -503,12 +519,12 @@ PrefabInstance:
     - target: {fileID: 6545141323799739238, guid: 32c65316ca8d3f740afeb0d32a1819a2,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.8370042
+      value: 0.9082333
       objectReference: {fileID: 0}
     - target: {fileID: 6545141323799739238, guid: 32c65316ca8d3f740afeb0d32a1819a2,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.8370042
+      value: 0.91414165
       objectReference: {fileID: 0}
     - target: {fileID: 6545141323799739238, guid: 32c65316ca8d3f740afeb0d32a1819a2,
         type: 3}
@@ -582,8 +598,8 @@ Camera:
   m_GameObject: {fileID: 199318937}
   m_Enabled: 1
   serializedVersion: 2
-  m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_ClearFlags: 2
+  m_BackGroundColor: {r: 0, g: 0, b: 0, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -598,7 +614,7 @@ Camera:
     height: 1
   near clip plane: 0.3
   far clip plane: 1000
-  field of view: 60
+  field of view: 59.697174
   orthographic: 0
   orthographic size: 5
   m_Depth: -1
@@ -1327,7 +1343,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 800, y: 600}
@@ -1870,7 +1886,6 @@ MonoBehaviour:
   pUp4: {fileID: 184329072}
   pUp5: {fileID: 184329071}
   scoreDisplay: {fileID: 1645281853}
-  score: 0
 --- !u!4 &875670274
 Transform:
   m_ObjectHideFlags: 0
@@ -2727,7 +2742,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -272, y: 178}
+  m_AnchoredPosition: {x: -305, y: 164}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1645281855
@@ -3433,6 +3448,11 @@ PrefabInstance:
       propertyPath: gameoverUI
       value: 
       objectReference: {fileID: 386241114}
+    - target: {fileID: 62768805829361721, guid: ef788e2a12996784dab99d1896d3bf0e,
+        type: 3}
+      propertyPath: ui
+      value: 
+      objectReference: {fileID: 181802776}
     - target: {fileID: 62768805829361724, guid: ef788e2a12996784dab99d1896d3bf0e,
         type: 3}
       propertyPath: m_LocalPosition.x

@@ -1,9 +1,5 @@
 sceneSetups:
-<<<<<<< HEAD
 - path: Assets/Scenes/ProtoScene.unity
-=======
-- path: Assets/Scenes/Moi.unity
->>>>>>> 5a9e50e821a3675bbff5fa4635a9009093874cb3
   isLoaded: 1
   isActive: 1
   isSubScene: 0
