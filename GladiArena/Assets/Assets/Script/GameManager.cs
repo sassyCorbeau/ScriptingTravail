@@ -16,6 +16,7 @@ public class GameManager : MonoBehaviour
     public GameObject pUp5;
 
     public GameObject scoreDisplay;
+    public GameObject scoreGO;
 
     static public float timerPower = 0;
 
