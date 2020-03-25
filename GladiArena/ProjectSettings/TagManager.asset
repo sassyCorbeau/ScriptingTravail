@@ -3,12 +3,13 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
+<<<<<<< HEAD
+  tags: []
+=======
   tags:
-  - stop
-  - bad
   - bullet
-  - PowerUP
-  - Enemy
+  - bad
+>>>>>>> 63cacfa8f3f4765f8cbcd5ec84c083c7eb598dc6
   layers:
   - Default
   - TransparentFX
@@ -43,9 +44,6 @@ TagManager:
   - 
   - 
   m_SortingLayers:
-  - name: bg
-    uniqueID: 3200667397
-    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0

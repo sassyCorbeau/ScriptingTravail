@@ -1,7 +1,43 @@
 fileFormatVersion: 2
 guid: 81c21665e87fc2a49a10ca859b984632
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: 4284762993033730369
+    second: Decimus_Spritesheet_0
+  - first:
+      213: 3131011536185683704
+    second: Decimus_Spritesheet_1
+  - first:
+      213: 2605966900044775315
+    second: Decimus_Spritesheet_2
+  - first:
+      213: -4394732346007446587
+    second: Decimus_Spritesheet_3
+  - first:
+      213: -902582238227640669
+    second: Decimus_Spritesheet_4
+  - first:
+      213: 4418436016554047752
+    second: Decimus_Spritesheet_5
+  - first:
+      213: -3403762862215671170
+    second: Decimus_Spritesheet_6
+  - first:
+      213: -2233524231170457822
+    second: Decimus_Spritesheet_7
+  - first:
+      213: -8559467055642676585
+    second: Decimus_Spritesheet_8
+  - first:
+      213: -2786848782993902456
+    second: Decimus_Spritesheet_9
+  - first:
+      213: -7043772706716878886
+    second: Decimus_Spritesheet_10
+  - first:
+      213: 2302059470951921390
+    second: Decimus_Spritesheet_11
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -40,12 +76,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -84,11 +120,263 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Decimus_Spritesheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 60
+        width: 21
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c1b4ff7f1a2a0d4bbfce41c1add46c5
+      internalID: 4284762993033730369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Decimus_Spritesheet_1
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 60
+        width: 21
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a2ab8e38191b1742a4069e3ab5248a8
+      internalID: 3131011536185683704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Decimus_Spritesheet_2
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 60
+        width: 21
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4faa283ed1a710b4784d8363efb17801
+      internalID: 2605966900044775315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Decimus_Spritesheet_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 40
+        width: 21
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5cc496be4723c0245acf0ed94ef46a0a
+      internalID: -4394732346007446587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Decimus_Spritesheet_4
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 40
+        width: 21
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0651ed2898d3ee47bfb45b254ba0e9c
+      internalID: -902582238227640669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Decimus_Spritesheet_5
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 40
+        width: 21
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c25ba38cbf6e074ba18ff010f711ea6
+      internalID: 4418436016554047752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Decimus_Spritesheet_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 20
+        width: 21
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39756e2e3c9172e4581bdc85d2e9c200
+      internalID: -3403762862215671170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Decimus_Spritesheet_7
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 20
+        width: 21
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9da4b84a7670b96448802ec85c6a4c08
+      internalID: -2233524231170457822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Decimus_Spritesheet_8
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 20
+        width: 21
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f781634c32004ba4581a215b6ef4221f
+      internalID: -8559467055642676585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Decimus_Spritesheet_9
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 21
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80b7b44eb107d0b41b4542e2370aca3e
+      internalID: -2786848782993902456
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Decimus_Spritesheet_10
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 0
+        width: 21
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90da29ed140420742a300d2ae5dd0702
+      internalID: -7043772706716878886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Decimus_Spritesheet_11
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 0
+        width: 21
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a52fe3910d6c0d4abf4afc40592a451
+      internalID: 2302059470951921390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
+    spriteID: bf2cf0086267f1748bee1f9329289b03
     internalID: 0
     vertices: []
     indices: 

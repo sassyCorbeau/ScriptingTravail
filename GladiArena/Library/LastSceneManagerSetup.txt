@@ -1,5 +1,20 @@
 sceneSetups:
+<<<<<<< HEAD
 - path: Assets/Scenes/MenuScene.unity
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+- path: Assets/Scenes/Emilien.unity
+=======
+<<<<<<< HEAD
+- path: Assets/Scenes/ProtoScene.unity
+=======
+>>>>>>> 3ae87bfcf49602224a1e2e30a171a62987dabdee
+- path: Assets/Scenes/Moi.unity
+>>>>>>> 772d4cea24bea582766090d3345b22c09a0197fa
+>>>>>>> 63cacfa8f3f4765f8cbcd5ec84c083c7eb598dc6
+>>>>>>> 8eeda24c456f54478380d6767aece11d2c3ead7f
   isLoaded: 1
   isActive: 1
   isSubScene: 0

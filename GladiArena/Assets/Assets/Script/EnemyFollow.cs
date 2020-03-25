@@ -10,11 +10,14 @@ public class EnemyFollow : MonoBehaviour
 
     public Transform Player;
     //Remplir sur l'inspector avec le Player
+
+
+
     private int timerMort = 0;
 
     void Start()
     {
-        Player = GameObject.Find("Player").transform;
+        Player = GameObject.FindGameObjectWithTag("Player").transform;
     }
 
     void Update()
