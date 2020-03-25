@@ -1,9 +1,5 @@
-<<<<<<< HEAD
-sceneSetups: []
-=======
 sceneSetups:
 - path: Assets/Scenes/Moi.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0
->>>>>>> 2fd818c24dac3a486a8bdbf0405be756e1907a87
