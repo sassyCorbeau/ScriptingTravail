@@ -6,6 +6,7 @@ public class PlayerHP : MonoBehaviour
 {
     public static int PlayerHealth = 1;
     public GameObject gameoverUI;
+    public GameObject ui;
     void Start()
     {
         
@@ -16,6 +17,7 @@ public class PlayerHP : MonoBehaviour
     {
         if (PlayerHealth == 0)
         {
+            ui.SetActive(false);
             gameoverUI.SetActive(true);
             Destroy(gameObject);
         }
