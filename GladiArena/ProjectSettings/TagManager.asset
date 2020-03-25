@@ -3,10 +3,14 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
+<<<<<<< HEAD
   tags:
   - stop
   - bullet
   - bad
+=======
+  tags: []
+>>>>>>> edc3550a7a413c4d953ca1ace5e6cf4cbf1681de
   layers:
   - Default
   - TransparentFX
