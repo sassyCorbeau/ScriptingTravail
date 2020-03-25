@@ -1,1 +1,13 @@
+<<<<<<< HEAD
 sceneSetups: []
+=======
+sceneSetups:
+<<<<<<< HEAD
+- path: Assets/Scenes/Moi.unity
+=======
+- path: Assets/Scenes/Victor.unity
+>>>>>>> edc3550a7a413c4d953ca1ace5e6cf4cbf1681de
+  isLoaded: 1
+  isActive: 1
+  isSubScene: 0
+>>>>>>> 2fd818c24dac3a486a8bdbf0405be756e1907a87
