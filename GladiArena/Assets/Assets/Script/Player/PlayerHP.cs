@@ -7,6 +7,7 @@ public class PlayerHP : MonoBehaviour
     public static int PlayerHealth = 1;
     public GameObject gameoverUI;
     public GameObject ui;
+    public GameObject decimus;
     void Start()
     {
         
@@ -19,7 +20,7 @@ public class PlayerHP : MonoBehaviour
         {
             ui.SetActive(false);
             gameoverUI.SetActive(true);
-            Destroy(gameObject);
+            Destroy(decimus);
         }
     }
 

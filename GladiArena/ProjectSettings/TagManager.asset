@@ -3,29 +3,7 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-<<<<<<< HEAD
-  tags:
-  - bullet
-  - bad
-=======
-<<<<<<< HEAD
-=======
   tags: []
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-=======
->>>>>>> 155f91ff2cfeb255b2a1f33971ff925b2ad80666
-  tags:
-  - bad
-<<<<<<< HEAD
-=======
->>>>>>> fea47cdc6bcbe742e4cb9dd2df3325faefb2f8b1
->>>>>>> 16f04619a264dbd2c4ec4a2fd7dba9553a1e11c6
->>>>>>> 245c6d5d0fa388ee8d9499473cf337df6d278df5
->>>>>>> 155f91ff2cfeb255b2a1f33971ff925b2ad80666
->>>>>>> 392207182e638fa4e761e220ddab18b202be6a13
   layers:
   - Default
   - TransparentFX
