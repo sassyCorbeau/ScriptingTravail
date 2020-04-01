@@ -34,6 +34,16 @@ public class Sang : MonoBehaviour
         }
 
 
+<<<<<<< HEAD
+=======
+    public void OnDestroy()
+    {
+<<<<<<< HEAD
+
+=======
+        Instantiate(tacheDeSang, transform.position, transform.rotation);
+>>>>>>> 71d8660e45d5eeeee7fb8293a69b4fa26aa939c5
+>>>>>>> 0b1d92fe36794e15b74bae28b48c335ca9abc617
     }
 }
 
