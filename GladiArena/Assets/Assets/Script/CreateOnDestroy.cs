@@ -13,19 +13,11 @@ public class CreateOnDestroy : MonoBehaviour
 
     // Script a mettre sur l'ennemi, qui renvoi si oui ou non un powerUp est laché.
 
-    // Use this for initialization
-    void Start()
-    {
-
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    
     public void OnDestroy()
     {
+      
+
         itemChoose = (Random.Range(0, 10));
 
         if (itemChoose == 0)
