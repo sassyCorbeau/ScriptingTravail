@@ -21,11 +21,9 @@ public class Sang : MonoBehaviour
 
     public void OnDestroy()
     {
-<<<<<<< HEAD
 
-=======
         Instantiate(tacheDeSang, transform.position, transform.rotation);
->>>>>>> 71d8660e45d5eeeee7fb8293a69b4fa26aa939c5
+
     }
 }
 

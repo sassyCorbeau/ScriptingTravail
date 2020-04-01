@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 992303712354684914}
   - component: {fileID: 992303712354684917}
   - component: {fileID: 5792379585344769734}
+  - component: {fileID: 5251854475372332453}
   m_Layer: 0
   m_Name: EnemyTest
   m_TagString: bad
@@ -120,6 +121,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 587b839b1328aef43af51c967aa42b64, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lifePickup: {fileID: 2443590618770175701, guid: 234fae3433f94254ea568ea7010c25b6,
+  lifePickup: {fileID: 7129298622702279938, guid: e2acd64b193c29f4cae30d129901b617,
     type: 3}
   powerUp: {fileID: 2443590618770175701, guid: 234fae3433f94254ea568ea7010c25b6, type: 3}
+--- !u!114 &5251854475372332453
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 992303712354684916}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e91967a5360535f47b408db2bd69fa1d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tacheDeSang: {fileID: 443312612331012915, guid: 877092bce7c2cb34e87777f3111a4d11,
+    type: 3}
