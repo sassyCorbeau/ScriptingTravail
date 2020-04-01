@@ -337,6 +337,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tacheDeSang: {fileID: 0}
+  tacheDeSang2: {fileID: 0}
 --- !u!1001 &866865737
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -670,6 +671,7 @@ GameObject:
   - component: {fileID: 1664387376}
   - component: {fileID: 1664387375}
   - component: {fileID: 1664387384}
+  - component: {fileID: 1664387385}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -857,6 +859,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bf1bf800f3c509e4bae579afd180b497, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1664387385
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1664387374}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e91967a5360535f47b408db2bd69fa1d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tacheDeSang: {fileID: 5682619327060526284, guid: 44f397854e06ff54c92411ee43e81b82,
+    type: 3}
+  tacheDeSang2: {fileID: 443312612331012915, guid: 877092bce7c2cb34e87777f3111a4d11,
+    type: 3}
 --- !u!1001 &1677496211
 PrefabInstance:
   m_ObjectHideFlags: 0
