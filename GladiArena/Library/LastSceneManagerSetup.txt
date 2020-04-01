@@ -1,5 +1,66 @@
 sceneSetups:
+<<<<<<< HEAD
 - path: Assets/Scenes/Moi.unity
+=======
+<<<<<<< HEAD
+- path: Assets/Scenes/Emilien.unity
+=======
+<<<<<<< HEAD
+- path: Assets/Scenes/Victor.unity
+=======
+<<<<<<< HEAD
+- path: Assets/Scenes/Ludivine.unity
+=======
+<<<<<<< HEAD
+- path: Assets/Scenes/Moi.unity
+=======
+<<<<<<< HEAD
+- path: Assets/Scenes/Victor.unity
+=======
+<<<<<<< HEAD
+- path: Assets/Scenes/JB.unity
+=======
+<<<<<<< HEAD
+- path: Assets/Scenes/Emilien.unity
+=======
+<<<<<<< HEAD
+- path: Assets/Scenes/Victor.unity
+=======
+<<<<<<< HEAD
+- path: Assets/Scenes/Ludivine.unity
+=======
+<<<<<<< HEAD
+- path: Assets/Scenes/JB.unity
+=======
+<<<<<<< HEAD
+- path: Assets/Scenes/Ludivine.unity
+=======
+<<<<<<< HEAD
+- path: Assets/Scenes/Moi.unity
+=======
+<<<<<<< HEAD
+- path: Assets/Scenes/Ludivine.unity
+=======
+<<<<<<< HEAD
+- path: Assets/Scenes/Emilien.unity
+=======
+- path: Assets/Scenes/Moi.unity
+>>>>>>> 370d6ea3125d848a0b0f224570ba249ce688b069
+>>>>>>> a10f9a9a876dd3d26134b1ffeef430e4495ecd0a
+>>>>>>> 1cf4c0d9321388ad541d6ae9260ca8cf720667c0
+>>>>>>> e24a900e8d4aa48a88b3c845f45c7ce00b7b96fa
+>>>>>>> 71d8660e45d5eeeee7fb8293a69b4fa26aa939c5
+>>>>>>> 0b1d92fe36794e15b74bae28b48c335ca9abc617
+>>>>>>> d1ed988c3ab1cb8814fddcfd959bed74c0158007
+>>>>>>> e6b7ba94e6b7d7fe38946b3123eca52bb6098a51
+>>>>>>> 0e61607e7ce81e8db5e2b3de91b73f5facca41dc
+<<<<<<< HEAD
+=======
+>>>>>>> 4be27a79ab5669a35674161a720d55f90bf0fd9a
+>>>>>>> ab71601b54a569d422b9c61079ac3909a0f70e14
+>>>>>>> f091d1e484ce02ba7dce164eaef2db9ee666c4a0
+>>>>>>> 0f50d624f14950ba83094deb67bb0ffca6a62773
+>>>>>>> ddab00d438ba46accc5a408303819fc24455ab83
   isLoaded: 1
   isActive: 1
   isSubScene: 0
