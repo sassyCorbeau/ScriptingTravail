@@ -7,7 +7,7 @@ using System.Collections;
 
 public class CreateOnDestroy : MonoBehaviour
 {
-
+    public GameObject lifePickup;
     public GameObject powerUp;
     private float itemChoose;
 
@@ -23,6 +23,7 @@ public class CreateOnDestroy : MonoBehaviour
         if (itemChoose == 0)
         {
             Debug.Log("Objet 0");
+            Instantiate(lifePickup, transform.position, transform.rotation);
             return;
         }
         if (itemChoose == 1)
