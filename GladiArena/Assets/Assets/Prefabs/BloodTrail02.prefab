@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 443312612331012914}
   m_Layer: 0
   m_Name: BloodTrail02
-  m_TagString: Untagged
+  m_TagString: blood
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
