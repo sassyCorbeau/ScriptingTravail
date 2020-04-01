@@ -445,6 +445,7 @@ MonoBehaviour:
   jumpSpeed: 8
   gravity: 20
   fin: {fileID: 0}
+  animator: {fileID: 0}
 --- !u!65 &887802648
 BoxCollider:
   m_ObjectHideFlags: 0
