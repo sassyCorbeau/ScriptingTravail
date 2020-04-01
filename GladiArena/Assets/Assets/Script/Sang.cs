@@ -7,6 +7,7 @@ public class Sang : MonoBehaviour
     public GameObject tacheDeSang;
     public GameObject tacheDeSang2;
     private float sangLaiiser;
+    public float timeToWait = 5f;
 
     //   mettre sur l 'ennemie
 
@@ -17,13 +18,13 @@ public class Sang : MonoBehaviour
         if (sangLaiiser == 0)
         {
             Debug.Log("Trainner 1");
-            Instantiate(tacheDeSang, transform.position, transform.rotation);
+            Destroy(Instantiate(tacheDeSang, transform.position, transform.rotation), timeToWait);
 
             return;
         }
         if (sangLaiiser == 1)
         {
-            Instantiate(tacheDeSang2, transform.position, transform.rotation);
+            Destroy(Instantiate(tacheDeSang2, transform.position, transform.rotation), timeToWait);
             Debug.Log("Trainner 2");
 
             return;
