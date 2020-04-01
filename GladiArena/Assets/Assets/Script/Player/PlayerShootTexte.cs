@@ -149,7 +149,7 @@ public class PlayerShootTexte : MonoBehaviour
 
         // MultiHit
 
-        if (GameManager.multiHit == true)
+        /* if (GameManager.multiHit == true)
         {
 
             Debug.Log("Multihit = True");
@@ -186,7 +186,7 @@ public class PlayerShootTexte : MonoBehaviour
                 GameManager.timerPower = 0;
                 return;
             }
-        }
+        } */
 
 
 
