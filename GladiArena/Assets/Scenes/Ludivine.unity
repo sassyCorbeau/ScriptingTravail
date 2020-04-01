@@ -218,6 +218,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 23235a4894837db42b47267b92e4d34a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pUp1: {fileID: 0}
+  pUp2: {fileID: 0}
+  pUp3: {fileID: 0}
+  pUp4: {fileID: 0}
+  pUp5: {fileID: 0}
+  scoreDisplay: {fileID: 0}
+  scoreGO: {fileID: 0}
 --- !u!4 &444132265
 Transform:
   m_ObjectHideFlags: 0
@@ -301,6 +308,24 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e2acd64b193c29f4cae30d129901b617, type: 3}
+--- !u!1 &767502671 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3060579972821872176, guid: 9090efc60e749de40b498e6a2a070ba5,
+    type: 3}
+  m_PrefabInstance: {fileID: 1838955809}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &767502672
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 767502671}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e91967a5360535f47b408db2bd69fa1d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &962507363
 GameObject:
   m_ObjectHideFlags: 0
@@ -584,8 +609,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7a338c696aa45df42a3fbdacdb6b1c45, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PlayerHealth: 3
   gameoverUI: {fileID: 0}
+  ui: {fileID: 0}
 --- !u!143 &1664387376
 CharacterController:
   m_ObjectHideFlags: 0
@@ -628,13 +653,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 647154eb0db8fd544bd83c80ad9c24bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 20
-  tilt: 2
-  boundary:
-    xMin: 0
-    xMax: 0
-    zMin: 0
-    zMax: 0
   shotUp: {fileID: 238177664369108905, guid: 4d65de5c6c836624698fadac3e673613, type: 3}
   shotDown: {fileID: 7593996716588604754, guid: 94de3dee5a7f24b47ac5d8c2f3b312b2,
     type: 3}
@@ -649,6 +667,14 @@ MonoBehaviour:
     type: 3}
   shotDownLeft: {fileID: 4475446980691261303, guid: 8454ffe0be5784e4cb08ff8942f4451c,
     type: 3}
+  spreadShotUp: {fileID: 0}
+  spreadShotDown: {fileID: 0}
+  spreadShotLeft: {fileID: 0}
+  spreadShotRight: {fileID: 0}
+  spreadShotUpLeft: {fileID: 0}
+  spreadshotUpRight: {fileID: 0}
+  spreadshotDownLeft: {fileID: 0}
+  spreadshotDownRIght: {fileID: 0}
 --- !u!114 &1664387379
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -664,6 +690,7 @@ MonoBehaviour:
   jumpSpeed: 8
   gravity: 20
   fin: {fileID: 0}
+  animator: {fileID: 0}
 --- !u!65 &1664387380
 BoxCollider:
   m_ObjectHideFlags: 0
