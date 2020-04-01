@@ -28,6 +28,11 @@ public class PlayerHP : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("bad"))
         {
+            if(GameManager.shield == true)
+            {
+                GameManager.playergethit = true;
+                return;
+            }
             Debug.Log("PlayerHP--");
             PlayerHealth--;
         }
