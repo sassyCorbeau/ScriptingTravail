@@ -43,11 +43,11 @@ public class GameManager : MonoBehaviour
 
         //PowerUP = 0;
 
-        pUp1.GetComponent<Image>().color = Color.grey;
-        pUp2.GetComponent<Image>().color = Color.grey;
-        pUp3.GetComponent<Image>().color = Color.grey;
-        pUp4.GetComponent<Image>().color = Color.grey;
-        pUp5.GetComponent<Image>().color = Color.grey;
+        pUp1.GetComponent<Image>().color = Color.white;
+        pUp2.GetComponent<Image>().color = Color.white;
+        pUp3.GetComponent<Image>().color = Color.white;
+        pUp4.GetComponent<Image>().color = Color.white;
+        pUp5.GetComponent<Image>().color = Color.white;
 
 
     }
@@ -94,7 +94,7 @@ public class GameManager : MonoBehaviour
                     fireRate = true;
                     PowerUP = 0;
 
-                    pUp1.GetComponent<Image>().color = Color.grey;
+                    pUp1.GetComponent<Image>().color = Color.white;
                     Debug.Log("ca marche");
 
                     Debug.Log("fireRate");
@@ -103,56 +103,56 @@ public class GameManager : MonoBehaviour
                 }
                 break;
             case 2:
-                pUp1.GetComponent<Image>().color = Color.grey;
+                pUp1.GetComponent<Image>().color = Color.white;
                 pUp2.GetComponent<Image>().color = Color.red;
                 if (Input.GetKeyDown("space"))
                 {
                     spreadShot = true;
                     PowerUP = 0;
 
-                    pUp2.GetComponent<Image>().color = Color.grey;
+                    pUp2.GetComponent<Image>().color = Color.white;
 
                     Debug.Log("spreadshot");
 
                 }
                 break;
             case 3:
-                pUp2.GetComponent<Image>().color = Color.grey;
+                pUp2.GetComponent<Image>().color = Color.white;
                 pUp3.GetComponent<Image>().color = Color.red;
                 if (Input.GetKeyDown("space"))
                 {
                     speedBoost = true;
                     PowerUP = 0;
 
-                    pUp3.GetComponent<Image>().color = Color.grey;
+                    pUp3.GetComponent<Image>().color = Color.white;
 
                     Debug.Log("speadboost");
 
                 }
                 break;
             case 4:
-                pUp3.GetComponent<Image>().color = Color.grey;
+                pUp3.GetComponent<Image>().color = Color.white;
                 pUp4.GetComponent<Image>().color = Color.red;
                 if (Input.GetKeyDown("space"))
                 {
                     shield = true;
                     PowerUP = 0;
 
-                    pUp4.GetComponent<Image>().color = Color.grey;
+                    pUp4.GetComponent<Image>().color = Color.white;
 
                     Debug.Log("shield");
 
                 }
                 break;
             case 5:
-                pUp4.GetComponent<Image>().color = Color.grey;
+                pUp4.GetComponent<Image>().color = Color.white;
                 pUp5.GetComponent<Image>().color = Color.red;
                 if (Input.GetKeyDown("space"))
                 {
                     multiHit = true;
                     PowerUP = 0;
 
-                    pUp5.GetComponent<Image>().color = Color.grey;
+                    pUp5.GetComponent<Image>().color = Color.white;
 
                     Debug.Log("multy");
 
@@ -164,7 +164,7 @@ public class GameManager : MonoBehaviour
                     defaut = true;
                     multiHit = true;
                     PowerUP = 0;
-                    pUp5.GetComponent<Image>().color = Color.grey;
+                    pUp5.GetComponent<Image>().color = Color.white;
                     score += tempScoreUp;
                     tempScoreUp = 0;
                 }
@@ -189,7 +189,7 @@ public class GameManager : MonoBehaviour
                 fireRate = false;
                 Debug.Log("fireRate End");
                 PlayerShootTexte.fireRate = 0.5f;
-                pUp1.GetComponent<Image>().color = Color.grey;
+                pUp1.GetComponent<Image>().color = Color.white;
                 timerPower = 0;
                 return;
             }
@@ -221,7 +221,7 @@ public class GameManager : MonoBehaviour
                 Debug.Log("Shield is off");
                 PlayerHP.PlayerHealth = 1;
                 shield = false;
-                pUp4.GetComponent<Image>().color = Color.grey;
+                pUp4.GetComponent<Image>().color = Color.white;
                 timerPower = 0;
                 return;
             }
@@ -247,7 +247,7 @@ public class GameManager : MonoBehaviour
             if (timerPower > 10)
             {
                 speedBoost = false;
-                pUp3.GetComponent<Image>().color = Color.grey;
+                pUp3.GetComponent<Image>().color = Color.white;
                 Debug.Log("speedBoost End");
                 PlayerMvt.speed = 6f;
                 timerPower = 0;
@@ -267,7 +267,7 @@ public class GameManager : MonoBehaviour
 
         if (timerPower > 9.9)
         {
-            pUp5.GetComponent<Image>().color = Color.grey;
+            pUp5.GetComponent<Image>().color = Color.white;
         }
     }
     void spreadShotActive()
@@ -279,7 +279,7 @@ public class GameManager : MonoBehaviour
 
         if (timerPower > 9.9)
         {
-            pUp2.GetComponent<Image>().color = Color.grey;
+            pUp2.GetComponent<Image>().color = Color.white;
         }
     }
 }
