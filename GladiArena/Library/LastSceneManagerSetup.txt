@@ -1,13 +1,5 @@
-<<<<<<< HEAD
-sceneSetups: []
-=======
 sceneSetups:
 <<<<<<< HEAD
-- path: Assets/Scenes/JB.unity
-=======
-<<<<<<< HEAD
-- path: Assets/Scenes/Emilien.unity
-=======
 <<<<<<< HEAD
 - path: Assets/Scenes/JB.unity
 =======
@@ -15,7 +7,16 @@ sceneSetups:
 - path: Assets/Scenes/Emilien.unity
 =======
 <<<<<<< HEAD
+- path: Assets/Scenes/JB.unity
+=======
+- path: Assets/Scenes/Ludivine.unity
+>>>>>>> 1cf4c0d9321388ad541d6ae9260ca8cf720667c0
+=======
+<<<<<<< HEAD
+- path: Assets/Scenes/Emilien.unity
+=======
 - path: Assets/Scenes/Moi.unity
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 - path: Assets/Scenes/JB.unity
@@ -27,7 +28,10 @@ sceneSetups:
 >>>>>>> 155f91ff2cfeb255b2a1f33971ff925b2ad80666
 >>>>>>> 392207182e638fa4e761e220ddab18b202be6a13
 >>>>>>> ef66cf3160c3c32d44d52c4a193d3482e5a0d801
+=======
+>>>>>>> 370d6ea3125d848a0b0f224570ba249ce688b069
+>>>>>>> a10f9a9a876dd3d26134b1ffeef430e4495ecd0a
+>>>>>>> 1cf4c0d9321388ad541d6ae9260ca8cf720667c0
   isLoaded: 1
   isActive: 1
   isSubScene: 0
->>>>>>> 0a46097caee0859cf0e29de4070a3d3cb33ff2ef

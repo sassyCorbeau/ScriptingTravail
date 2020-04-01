@@ -1,5 +1,6 @@
-Base path: 'C:/Program Files/Unity/Hub/Editor/2019.2.15f1/Editor/Data', plugins path 'C:/Program Files/Unity/Hub/Editor/2019.2.15f1/Editor/Data/PlaybackEngines'
+Base path: 'D:/Program files/Unity/2019.2.15f1/Editor/Data', plugins path 'D:/Program files/Unity/2019.2.15f1/Editor/Data/PlaybackEngines'
 Cmd: initializeCompiler
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -43,3 +44,5 @@ Cmd: preprocess
 >>>>>>> 392207182e638fa4e761e220ddab18b202be6a13
 >>>>>>> 0a46097caee0859cf0e29de4070a3d3cb33ff2ef
 >>>>>>> ef66cf3160c3c32d44d52c4a193d3482e5a0d801
+=======
+>>>>>>> 1cf4c0d9321388ad541d6ae9260ca8cf720667c0
