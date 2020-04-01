@@ -1,5 +1,9 @@
+<<<<<<< HEAD
+sceneSetups: []
+=======
 sceneSetups:
 - path: Assets/Scenes/Emilien.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0
+>>>>>>> 361ed0e5981f76d60102046b49cf5533f2578d21
