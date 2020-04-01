@@ -1,5 +1,9 @@
 sceneSetups:
+<<<<<<< HEAD
 - path: Assets/Scenes/JB.unity
+=======
+- path: Assets/Scenes/Victor.unity
+>>>>>>> fea47cdc6bcbe742e4cb9dd2df3325faefb2f8b1
   isLoaded: 1
   isActive: 1
   isSubScene: 0
