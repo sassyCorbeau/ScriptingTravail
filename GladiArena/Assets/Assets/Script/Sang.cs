@@ -38,6 +38,7 @@ public class Sang : MonoBehaviour
 =======
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 <<<<<<< HEAD
 =======
@@ -53,8 +54,11 @@ public class Sang : MonoBehaviour
 >>>>>>> d1ed988c3ab1cb8814fddcfd959bed74c0158007
 >>>>>>> 0e61607e7ce81e8db5e2b3de91b73f5facca41dc
 =======
+=======
+>>>>>>> 8054a28379bcaa35125daa1dc8b1d62fbfca4ac9
 >>>>>>> ab71601b54a569d422b9c61079ac3909a0f70e14
     }
+    
 }
 
 
