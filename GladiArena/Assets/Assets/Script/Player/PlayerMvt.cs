@@ -10,6 +10,9 @@ public class PlayerMvt : MonoBehaviour
     private Vector3 moveDirection = Vector3.zero;
     CharacterController Cc;
     public GameObject fin;
+    public Animator animator;
+
+    Vector2 movement;
 
     void Start()
     {
@@ -21,8 +24,11 @@ public class PlayerMvt : MonoBehaviour
         
         Cc.velocity.Set(0, 0, 0);
 
-            moveDirection = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"));
-            moveDirection *= speed;
+        moveDirection = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"));
+        moveDirection *= speed;
+
+        movement.x = Input.GetAxisRaw("Horizontal");
+        movement.y = Input.GetAxisRaw("Vertical");
 
            /* if (Input.GetButtonDown("Jump"))
             {
@@ -34,6 +40,10 @@ public class PlayerMvt : MonoBehaviour
           //  moveDirection.y -= gravity * Time.deltaTime;
          // Désactivé a cause du mot gravity, ça fait peur
        Cc.Move(moveDirection * Time.deltaTime);
+
+        animator.SetFloat("Horizontal", movement.x);
+        animator.SetFloat("Vertical", movement.y);
+        animator.SetFloat("Speed", movement.sqrMagnitude);
 
 
 
