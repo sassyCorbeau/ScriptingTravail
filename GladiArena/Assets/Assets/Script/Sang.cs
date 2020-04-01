@@ -21,7 +21,7 @@ public class Sang : MonoBehaviour
 
     public void OnDestroy()
     {
-        Instantiate(tacheDesang, transform.position, transform.rotation);
+        Instantiate(tacheDeSang, transform.position, transform.rotation);
     }
 }
 
