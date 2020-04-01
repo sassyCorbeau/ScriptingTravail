@@ -104,106 +104,7 @@
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Sprite.shader" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface.shader" />
     <Reference Include="Unity.Timeline.Editor">
-<<<<<<< HEAD
       <HintPath>D:/Utilisateur/Documents/Gladiarena/Gladiarena_Projet/GladiArena/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
-=======
-<<<<<<< HEAD
-      <HintPath>C:/Users/etctu/Documents/GladiArena/GladiArena/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-      <HintPath>D:/Utilisateur/Documents/Gladiarena/Gladiarena_Projet/GladiArena/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-      <HintPath>D:/EArt/Coding_Scripting/ProjetScript/GladiArena/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.VSCode.Editor">
-      <HintPath>D:/EArt/Coding_Scripting/ProjetScript/GladiArena/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>D:/EArt/Coding_Scripting/ProjetScript/GladiArena/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.UI">
-      <HintPath>D:/EArt/Coding_Scripting/ProjetScript/GladiArena/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Timeline">
-      <HintPath>D:/EArt/Coding_Scripting/ProjetScript/GladiArena/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.CollabProxy.Editor">
-      <HintPath>D:/EArt/Coding_Scripting/ProjetScript/GladiArena/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Rider.Editor">
-      <HintPath>D:/EArt/Coding_Scripting/ProjetScript/GladiArena/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.2D.Sprite.Editor">
-      <HintPath>D:/EArt/Coding_Scripting/ProjetScript/GladiArena/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.TextMeshPro">
-      <HintPath>D:/EArt/Coding_Scripting/ProjetScript/GladiArena/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEditor.UI">
-      <HintPath>D:/EArt/Coding_Scripting/ProjetScript/GladiArena/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
->>>>>>> 125481c81add46ecbb42122b90e67f54aea9d7de
-=======
-<<<<<<< HEAD
-      <HintPath>D:/Utilisateur/Documents/Gladiarena/Gladiarena_Projet/GladiArena/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> 1e6021b2e0f4177057901f0cdf0ebb4daecac8f8
->>>>>>> 772d4cea24bea582766090d3345b22c09a0197fa
-      <HintPath>D:/E-Art/Scripting/GladiArena/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.VSCode.Editor">
-      <HintPath>D:/E-Art/Scripting/GladiArena/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>D:/E-Art/Scripting/GladiArena/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.UI">
-      <HintPath>D:/E-Art/Scripting/GladiArena/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Timeline">
-      <HintPath>D:/E-Art/Scripting/GladiArena/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.CollabProxy.Editor">
-      <HintPath>D:/E-Art/Scripting/GladiArena/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Rider.Editor">
-      <HintPath>D:/E-Art/Scripting/GladiArena/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.2D.Sprite.Editor">
-      <HintPath>D:/E-Art/Scripting/GladiArena/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.TextMeshPro">
-      <HintPath>D:/E-Art/Scripting/GladiArena/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEditor.UI">
-      <HintPath>D:/E-Art/Scripting/GladiArena/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> 92fb81148b279cea188153691581b89b089b8136
->>>>>>> e2825c107992be99f1f8688c109c46a36f15e71c
->>>>>>> 2fd818c24dac3a486a8bdbf0405be756e1907a87
-      <HintPath>C:/Users/etctu/Documents/GladiArena/GladiArena/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
->>>>>>> edc3550a7a413c4d953ca1ace5e6cf4cbf1681de
->>>>>>> 0adb0cfd02eaa69dce2ee8af94c9f9fde35180fd
->>>>>>> 63cacfa8f3f4765f8cbcd5ec84c083c7eb598dc6
->>>>>>> 3ae87bfcf49602224a1e2e30a171a62987dabdee
     </Reference>
     <Reference Include="Unity.VSCode.Editor">
       <HintPath>D:/Utilisateur/Documents/Gladiarena/Gladiarena_Projet/GladiArena/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
@@ -230,22 +131,7 @@
       <HintPath>D:/Utilisateur/Documents/Gladiarena/Gladiarena_Projet/GladiArena/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.UI">
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-      <HintPath>C:/Users/etctu/Documents/GladiArena/GladiArena/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
-=======
-<<<<<<< HEAD
-=======
-      <HintPath>C:/Users/etctu/Documents/GladiArena/GladiArena/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
-<<<<<<< HEAD
-=======
-=======
->>>>>>> 0adb0cfd02eaa69dce2ee8af94c9f9fde35180fd
->>>>>>> 3ae87bfcf49602224a1e2e30a171a62987dabdee
       <HintPath>D:/Utilisateur/Documents/Gladiarena/Gladiarena_Projet/GladiArena/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
->>>>>>> 772d4cea24bea582766090d3345b22c09a0197fa
->>>>>>> 63cacfa8f3f4765f8cbcd5ec84c083c7eb598dc6
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.2.15f1/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
