@@ -6,8 +6,7 @@ using UnityEngine.UI;
 public class GameManager : MonoBehaviour
 {
     public static int PowerUP = 0;
-
-
+    
 
     public GameObject pUp1;
     public GameObject pUp1Activable;
