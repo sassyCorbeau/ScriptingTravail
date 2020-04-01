@@ -6,6 +6,8 @@ public class WaveSpawner : MonoBehaviour
 {
    public enum SpawnState { SPAWNING, WAITING, COUNTING };
 
+    
+
    [System.Serializable]
    public class Wave
     {
@@ -20,7 +22,6 @@ public class WaveSpawner : MonoBehaviour
     }
 
 
-  
 
     public Wave waves;
     private int nextWave = 0;
@@ -40,6 +41,8 @@ public class WaveSpawner : MonoBehaviour
 
     private void Start()
     {
+
+
         if(spawnPoints.Length == 0)
         {
             Debug.LogError("You Suck");
@@ -63,6 +66,7 @@ public class WaveSpawner : MonoBehaviour
             }
         }
 
+        
 
 
         if(waveCountdown <= 0)

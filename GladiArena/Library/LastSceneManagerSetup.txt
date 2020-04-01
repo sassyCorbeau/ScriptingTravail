@@ -1,7 +1,10 @@
-<<<<<<< HEAD
-sceneSetups: []
-=======
 sceneSetups:
+<<<<<<< HEAD
+- path: Assets/Scenes/Moi.unity
+=======
+<<<<<<< HEAD
+- path: Assets/Scenes/Victor.unity
+=======
 <<<<<<< HEAD
 - path: Assets/Scenes/JB.unity
 =======
@@ -39,7 +42,10 @@ sceneSetups:
 >>>>>>> d1ed988c3ab1cb8814fddcfd959bed74c0158007
 >>>>>>> e6b7ba94e6b7d7fe38946b3123eca52bb6098a51
 >>>>>>> 0e61607e7ce81e8db5e2b3de91b73f5facca41dc
+<<<<<<< HEAD
+=======
+>>>>>>> 4be27a79ab5669a35674161a720d55f90bf0fd9a
+>>>>>>> ab71601b54a569d422b9c61079ac3909a0f70e14
   isLoaded: 1
   isActive: 1
   isSubScene: 0
->>>>>>> 9ff5d0c3c5ed441cc7ca716ddd8e41e24448a75c

@@ -18,15 +18,17 @@ public class Sang : MonoBehaviour
         {
             Debug.Log("Trainner 1");
             Instantiate(tacheDeSang, transform.position, transform.rotation);
+
             return;
         }
         if (sangLaiiser == 1)
         {
             Instantiate(tacheDeSang2, transform.position, transform.rotation);
             Debug.Log("Trainner 2");
+
             return;
         }
-        if (sangLaiiser == 1)
+        if (sangLaiiser == 2)
         {
 
             Debug.Log("Rien");
@@ -35,6 +37,7 @@ public class Sang : MonoBehaviour
 <<<<<<< HEAD
 =======
 
+<<<<<<< HEAD
 
 <<<<<<< HEAD
 =======
@@ -49,6 +52,8 @@ public class Sang : MonoBehaviour
 >>>>>>> 0b1d92fe36794e15b74bae28b48c335ca9abc617
 >>>>>>> d1ed988c3ab1cb8814fddcfd959bed74c0158007
 >>>>>>> 0e61607e7ce81e8db5e2b3de91b73f5facca41dc
+=======
+>>>>>>> ab71601b54a569d422b9c61079ac3909a0f70e14
     }
 }
 
