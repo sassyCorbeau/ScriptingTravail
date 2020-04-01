@@ -169,3 +169,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tacheDeSang: {fileID: 5682619327060526284, guid: 44f397854e06ff54c92411ee43e81b82,
     type: 3}
+  tacheDeSang2: {fileID: 443312612331012915, guid: 877092bce7c2cb34e87777f3111a4d11,
+    type: 3}
