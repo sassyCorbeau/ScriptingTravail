@@ -1,17 +1,5 @@
 sceneSetups:
-<<<<<<< HEAD
 - path: Assets/Scenes/Emilien.unity
-=======
-<<<<<<< HEAD
-- path: Assets/Scenes/Moi.unity
-=======
-<<<<<<< HEAD
-- path: Assets/Scenes/JB.unity
-=======
-- path: Assets/Scenes/Victor.unity
->>>>>>> fea47cdc6bcbe742e4cb9dd2df3325faefb2f8b1
->>>>>>> 16f04619a264dbd2c4ec4a2fd7dba9553a1e11c6
->>>>>>> 245c6d5d0fa388ee8d9499473cf337df6d278df5
   isLoaded: 1
   isActive: 1
   isSubScene: 0
