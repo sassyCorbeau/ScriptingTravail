@@ -12,7 +12,11 @@ GameObject:
   - component: {fileID: 5682619327060526283}
   m_Layer: 0
   m_Name: BloodTrail01
+<<<<<<< HEAD
+  m_TagString: Sang
+=======
   m_TagString: blood
+>>>>>>> ab71601b54a569d422b9c61079ac3909a0f70e14
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

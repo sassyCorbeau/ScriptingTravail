@@ -4,9 +4,10 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - bullet
   - bad
-  - blood
+  - bullet
+  - Undefined
+  - Sang
   layers:
   - Default
   - TransparentFX
