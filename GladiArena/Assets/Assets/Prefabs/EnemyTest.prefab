@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 992303712354684915}
   - component: {fileID: 992303712354684914}
   - component: {fileID: 992303712354684917}
+  - component: {fileID: 5792379585344769734}
   m_Layer: 0
   m_Name: EnemyTest
   m_TagString: bad
@@ -107,3 +108,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &5792379585344769734
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 992303712354684916}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 587b839b1328aef43af51c967aa42b64, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lifePickup: {fileID: 2443590618770175701, guid: 234fae3433f94254ea568ea7010c25b6,
+    type: 3}
+  powerUp: {fileID: 2443590618770175701, guid: 234fae3433f94254ea568ea7010c25b6, type: 3}
