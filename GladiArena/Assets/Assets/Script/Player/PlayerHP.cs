@@ -18,7 +18,7 @@ public class PlayerHP : MonoBehaviour
     {
         if (PlayerHealth == 0)
         {
-            ui.SetActive(false);
+            // ui.SetActive(false);
             gameoverUI.SetActive(true);
             Destroy(decimus);
         }
