@@ -35,9 +35,13 @@ public class GameManager : MonoBehaviour
     bool fireRate = false;
     static public bool spreadShot = false;
     bool speedBoost = false;
-    bool shield = false;
+    public static bool shield = false;
     static public bool multiHit = false;
     bool defaut = false;
+
+    public static bool playergethit = false;
+
+    public GameObject shieldsprite;
 
     // Start is called before the first frame update
     void Start()
@@ -208,24 +212,29 @@ public class GameManager : MonoBehaviour
         if (shield == true)
         {
             pUp4Active.SetActive(true);
+            shieldsprite.SetActive(true);
             Debug.Log("Shield is on");
 
             timerPower = timerPower + Time.deltaTime;
-            PlayerHP.PlayerHealth = 2;
+            PlayerHP.PlayerHealth++;            
+            
 
-            if (PlayerHP.PlayerHealth == 1)
+            if (playergethit == true)
             {
                 Debug.Log("Shield is off");
+                shieldsprite.SetActive(false);
                 timerPower = 0;
                 shield = false;
+                playergethit = false;
                 return;
             }
 
             if (timerPower > 10)
             {
                 Debug.Log("Shield is off");
-                PlayerHP.PlayerHealth = 1;
+                shieldsprite.SetActive(false);
                 shield = false;
+                playergethit = false;
                 pUp4Active.SetActive(false);
                 timerPower = 0;
                 return;
