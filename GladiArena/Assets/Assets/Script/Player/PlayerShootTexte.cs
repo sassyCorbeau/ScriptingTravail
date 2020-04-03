@@ -7,6 +7,7 @@ using UnityEngine.UI;
 
 public class PlayerShootTexte : MonoBehaviour
 {
+    public AudioClip piou;
 
 
     public GameObject shotUp; // Les différents tirs
@@ -40,13 +41,20 @@ public class PlayerShootTexte : MonoBehaviour
             Debug.Log("Multihit = True");
             multiHitActive = true;
 
-
+            
             GameManager.timerPower = GameManager.timerPower + Time.deltaTime;
 
             Debug.Log("Multihit changée");
             if (Input.GetKey(KeyCode.RightArrow) && Time.time > nextFire || (Input.GetKey(KeyCode.LeftArrow) && Time.time > nextFire || (Input.GetKey(KeyCode.DownArrow) && Time.time > nextFire || (Input.GetKey(KeyCode.UpArrow) && Time.time > nextFire))))
             {
+
                 nextFire = Time.time + fireRate;
+
+                AudioSource camSource = Camera.main.GetComponent<AudioSource>();
+                Debug.Log("Tu piou piou !");
+                camSource.clip = piou;
+                camSource.Play();
+
                 Instantiate(shotUp, transform.transform);
                 Instantiate(shotRight, transform.transform);
                 Instantiate(shotLeft, transform.transform);
@@ -85,24 +93,40 @@ public class PlayerShootTexte : MonoBehaviour
             if (Input.GetKey(KeyCode.LeftArrow) && Time.time > nextFire && Input.GetKey(KeyCode.UpArrow))
             {
                 nextFire = Time.time + fireRate;
+                AudioSource camSource = Camera.main.GetComponent<AudioSource>();
+                Debug.Log("Tu piou piou !");
+                camSource.clip = piou;
+                camSource.Play();
                 Instantiate(spreadShotUpLeft, transform.transform);
                 return;
             }
             if (Input.GetKey(KeyCode.RightArrow) && Time.time > nextFire && Input.GetKey(KeyCode.UpArrow))
             {
                 nextFire = Time.time + fireRate;
+                AudioSource camSource = Camera.main.GetComponent<AudioSource>();
+                Debug.Log("Tu piou piou !");
+                camSource.clip = piou;
+                camSource.Play();
                 Instantiate(spreadshotUpRight, transform.transform);
                 return;
             }
             if (Input.GetKey(KeyCode.DownArrow) && Time.time > nextFire && Input.GetKey(KeyCode.LeftArrow))
             {
                 nextFire = Time.time + fireRate;
+                AudioSource camSource = Camera.main.GetComponent<AudioSource>();
+                Debug.Log("Tu piou piou !");
+                camSource.clip = piou;
+                camSource.Play();
                 Instantiate(spreadshotDownLeft, transform.transform);
                 return;
             }
             if (Input.GetKey(KeyCode.DownArrow) && Input.GetKey(KeyCode.RightArrow) && Time.time > nextFire)
             {
                 nextFire = Time.time + fireRate;
+                AudioSource camSource = Camera.main.GetComponent<AudioSource>();
+                Debug.Log("Tu piou piou !");
+                camSource.clip = piou;
+                camSource.Play();
                 Instantiate(spreadshotDownRIght, transform.transform);
                 return;
             }
@@ -110,22 +134,38 @@ public class PlayerShootTexte : MonoBehaviour
             if (Input.GetKey(KeyCode.UpArrow) && Time.time > nextFire)
             {
                 nextFire = Time.time + fireRate;
+                AudioSource camSource = Camera.main.GetComponent<AudioSource>();
+                Debug.Log("Tu piou piou !");
+                camSource.clip = piou;
+                camSource.Play();
                 Instantiate(spreadShotUp, transform.transform);
 
             }
             if (Input.GetKey(KeyCode.DownArrow) && Time.time > nextFire)
             {
                 nextFire = Time.time + fireRate;
+                AudioSource camSource = Camera.main.GetComponent<AudioSource>();
+                Debug.Log("Tu piou piou !");
+                camSource.clip = piou;
+                camSource.Play();
                 Instantiate(spreadShotDown, transform.transform);
             }
             if (Input.GetKey(KeyCode.LeftArrow) && Time.time > nextFire)
             {
                 nextFire = Time.time + fireRate;
+                AudioSource camSource = Camera.main.GetComponent<AudioSource>();
+                Debug.Log("Tu piou piou !");
+                camSource.clip = piou;
+                camSource.Play();
                 Instantiate(spreadShotLeft, transform.transform);
             }
             if (Input.GetKey(KeyCode.RightArrow) && Time.time > nextFire)
             {
                 nextFire = Time.time + fireRate;
+                AudioSource camSource = Camera.main.GetComponent<AudioSource>();
+                Debug.Log("Tu piou piou !");
+                camSource.clip = piou;
+                camSource.Play();
                 Instantiate(spreadShotRight, transform.transform);
             }
             
@@ -197,6 +237,10 @@ public class PlayerShootTexte : MonoBehaviour
             if (Input.GetKey(KeyCode.UpArrow) && Input.GetKey(KeyCode.RightArrow) && Time.time > nextFire)
             {
                 nextFire = Time.time + fireRate;
+                AudioSource camSource = Camera.main.GetComponent<AudioSource>();
+                Debug.Log("Tu piou piou !");
+                camSource.clip = piou;
+                camSource.Play();
                 Instantiate(shotUpRight, transform.transform);
                 return;
 
@@ -204,6 +248,10 @@ public class PlayerShootTexte : MonoBehaviour
             if (Input.GetKey(KeyCode.UpArrow) && Input.GetKey(KeyCode.LeftArrow) && Time.time > nextFire)
             {
                 nextFire = Time.time + fireRate;
+                AudioSource camSource = Camera.main.GetComponent<AudioSource>();
+                Debug.Log("Tu piou piou !");
+                camSource.clip = piou;
+                camSource.Play();
                 Instantiate(shotUpLeft, transform.transform);
                 return;
 
@@ -211,6 +259,10 @@ public class PlayerShootTexte : MonoBehaviour
             if (Input.GetKey(KeyCode.DownArrow) && Input.GetKey(KeyCode.RightArrow) && Time.time > nextFire)
             {
                 nextFire = Time.time + fireRate;
+                AudioSource camSource = Camera.main.GetComponent<AudioSource>();
+                Debug.Log("Tu piou piou !");
+                camSource.clip = piou;
+                camSource.Play();
                 Instantiate(shotDownRight, transform.transform);
                 return;
 
@@ -218,6 +270,10 @@ public class PlayerShootTexte : MonoBehaviour
             if (Input.GetKey(KeyCode.DownArrow) && Input.GetKey(KeyCode.LeftArrow) && Time.time > nextFire)
             {
                 nextFire = Time.time + fireRate;
+                AudioSource camSource = Camera.main.GetComponent<AudioSource>();
+                Debug.Log("Tu piou piou !");
+                camSource.clip = piou;
+                camSource.Play();
                 Instantiate(shotDownLeft, transform.transform);
                 return;
 
@@ -225,22 +281,38 @@ public class PlayerShootTexte : MonoBehaviour
             if (Input.GetKey(KeyCode.UpArrow) && Time.time > nextFire)
             {
                 nextFire = Time.time + fireRate;
+                AudioSource camSource = Camera.main.GetComponent<AudioSource>();
+                Debug.Log("Tu piou piou !");
+                camSource.clip = piou;
+                camSource.Play();
                 Instantiate(shotUp, transform.transform);
 
             }
             if (Input.GetKey(KeyCode.DownArrow) && Time.time > nextFire)
             {
                 nextFire = Time.time + fireRate;
+                AudioSource camSource = Camera.main.GetComponent<AudioSource>();
+                Debug.Log("Tu piou piou !");
+                camSource.clip = piou;
+                camSource.Play();
                 Instantiate(shotDown, transform.transform);
             }
             if (Input.GetKey(KeyCode.LeftArrow) && Time.time > nextFire)
             {
                 nextFire = Time.time + fireRate;
+                AudioSource camSource = Camera.main.GetComponent<AudioSource>();
+                Debug.Log("Tu piou piou !");
+                camSource.clip = piou;
+                camSource.Play();
                 Instantiate(shotLeft, transform.transform);
             }
             if (Input.GetKey(KeyCode.RightArrow) && Time.time > nextFire)
             {
                 nextFire = Time.time + fireRate;
+                AudioSource camSource = Camera.main.GetComponent<AudioSource>();
+                Debug.Log("Tu piou piou !");
+                camSource.clip = piou;
+                camSource.Play();
                 Instantiate(shotRight, transform.transform);
             }
 

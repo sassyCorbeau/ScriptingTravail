@@ -3,8 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class PowerUP_Collect : MonoBehaviour
-
 {
+    public AudioClip collect;
     
     // Start is called before the first frame update
     void Start()
@@ -35,7 +35,18 @@ public class PowerUP_Collect : MonoBehaviour
         Debug.Log("Power up is picked !");
         //GameObject.Find("GameManger").GetComponent<GameManager>().PowerUP++;
         GameManager.PowerUP++;
+
         Destroy(gameObject);
         //GameManager.PowerUPSwitch();
     }
+
+    void OnDestroy()
+    {
+
+        AudioSource camSource = Camera.main.GetComponent<AudioSource>();
+        Debug.Log("Tu dum !");
+        camSource.clip = collect;
+        camSource.Play();
+
+    } 
 }

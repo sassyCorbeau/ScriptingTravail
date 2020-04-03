@@ -6,9 +6,9 @@ public class WaveSpawner : MonoBehaviour
 {
    public enum SpawnState { SPAWNING, WAITING, COUNTING };
 
-    
+    public AudioClip newWave;
 
-   [System.Serializable]
+    [System.Serializable]
    public class Wave
     {
         //remplir avec un ennemi au hasard c'est pas important
@@ -89,6 +89,11 @@ public class WaveSpawner : MonoBehaviour
         waveCountdown = timeBetweenWaves;
        
         nextWave = -1;
+
+        AudioSource camSource = Camera.main.GetComponent<AudioSource>();
+        Debug.Log("Tu Waves !");
+        camSource.clip = newWave;
+        camSource.Play();
 
         //à changer au besoin
         waves.count += 2;

@@ -173,6 +173,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 3
+  enemyKill: {fileID: 8300000, guid: a3ff8a98bf8e5ab4fa7f8b085fb35dd4, type: 3}
+  death: {fileID: 8300000, guid: 4668d9fcf8d264f3693f23878a14042b, type: 3}
   Player: {fileID: 0}
 --- !u!54 &3888658314508457434
 Rigidbody:
@@ -230,3 +232,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animator: {fileID: 2273780594555256929}
+  oldposition: {x: 0, y: 0, z: 0}
+  move: 0

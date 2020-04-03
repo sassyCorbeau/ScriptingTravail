@@ -6,6 +6,8 @@ public class Bullet : MonoBehaviour
 {
     Rigidbody m_Rigidbody;
 
+    public AudioClip piou;
+
     void Start()
     {
         transform.parent = null;
@@ -14,11 +16,8 @@ public class Bullet : MonoBehaviour
 
     void Update()
     {
-        
         GetComponent<Rigidbody>().velocity = new Vector3 (0f, 40f, 0f);
         
-
-
     }
     private void OnTriggerEnter(Collider other)
     {

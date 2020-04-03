@@ -71,6 +71,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 3
+  enemyKill: {fileID: 8300000, guid: 662f8b0fe7f39d341a63968054ccc95d, type: 3}
+  death: {fileID: 8300000, guid: 4668d9fcf8d264f3693f23878a14042b, type: 3}
   Player: {fileID: 0}
 --- !u!54 &8440755810758548073
 Rigidbody:
