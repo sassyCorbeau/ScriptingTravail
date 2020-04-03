@@ -35,7 +35,10 @@ public class Sang : MonoBehaviour
             Debug.Log("Rien");
             return;
         }
+<<<<<<< HEAD
+=======
 
+>>>>>>> 1f0f3bd6fc9f618555bea31fa102d9631a9df2a5
     }
     
 }
