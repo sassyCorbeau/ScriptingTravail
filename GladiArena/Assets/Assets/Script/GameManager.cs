@@ -41,7 +41,6 @@ public class GameManager : MonoBehaviour
 
     public static bool playergethit = false;
 
-    public Transform playerpos;
     public GameObject shieldsprite;
 
     // Start is called before the first frame update
@@ -213,7 +212,7 @@ public class GameManager : MonoBehaviour
         if (shield == true)
         {
             pUp4Active.SetActive(true);
-            Instantiate(shieldsprite, playerpos);
+            shieldsprite.SetActive(true);
             Debug.Log("Shield is on");
 
             timerPower = timerPower + Time.deltaTime;
@@ -223,7 +222,7 @@ public class GameManager : MonoBehaviour
             if (playergethit == true)
             {
                 Debug.Log("Shield is off");
-                Destroy(shieldsprite);
+                shieldsprite.SetActive(false);
                 timerPower = 0;
                 shield = false;
                 playergethit = false;
@@ -233,7 +232,7 @@ public class GameManager : MonoBehaviour
             if (timerPower > 10)
             {
                 Debug.Log("Shield is off");
-                Destroy(shieldsprite);
+                shieldsprite.SetActive(false);
                 shield = false;
                 playergethit = false;
                 pUp4Active.SetActive(false);
