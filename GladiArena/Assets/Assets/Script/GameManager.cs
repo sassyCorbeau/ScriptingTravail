@@ -209,6 +209,29 @@ public class GameManager : MonoBehaviour
 
     void shieldPower()
     {
+
+        if (playergethit == true)
+        {
+            Debug.Log("Shield is off");
+            shieldsprite.SetActive(false);
+            timerPower = 0;
+            
+            playergethit = false;
+            shield = false;
+            return;
+        }
+
+        if (timerPower > 10)
+        {
+            Debug.Log("Shield is off");
+            shieldsprite.SetActive(false);
+            shield = false;
+            playergethit = false;
+            pUp4Active.SetActive(false);
+            timerPower = 0;
+            return;
+        }
+        
         if (shield == true)
         {
             pUp4Active.SetActive(true);
@@ -218,32 +241,6 @@ public class GameManager : MonoBehaviour
             timerPower = timerPower + Time.deltaTime;
             PlayerHP.PlayerHealth++;            
             
-
-            if (playergethit == true)
-            {
-                Debug.Log("Shield is off");
-                shieldsprite.SetActive(false);
-                timerPower = 0;
-                shield = false;
-                playergethit = false;
-                return;
-            }
-
-            if (timerPower > 10)
-            {
-                Debug.Log("Shield is off");
-                shieldsprite.SetActive(false);
-                shield = false;
-                playergethit = false;
-                pUp4Active.SetActive(false);
-                timerPower = 0;
-                return;
-            }
-
-
-
-            
-
 
         }
     }

@@ -8,10 +8,9 @@ public class PlayerHP : MonoBehaviour
     public GameObject gameoverUI;
     public GameObject ui;
     public GameObject decimus;
-    void Start()
-    {
-        
-    }
+
+    public AudioClip death;
+   
 
     // Update is called once per frame
     void Update()
@@ -24,17 +23,27 @@ public class PlayerHP : MonoBehaviour
         }
     }
 
-    private void OnCollisionEnter(Collision collision)
+    private void OnTriggerEnter(Collider collision)
     {
         if (collision.gameObject.CompareTag("bad"))
         {
+            Destroy (collision.gameObject);
+
             if(GameManager.shield == true)
             {
                 GameManager.playergethit = true;
                 return;
             }
+
+                AudioSource camSource = Camera.main.GetComponent<AudioSource>();
+                Debug.Log("Tu mort !");
+                camSource.clip = death;
+                camSource.Play();
+
             Debug.Log("PlayerHP--");
             PlayerHealth--;
         }
     }
+
+
 }
