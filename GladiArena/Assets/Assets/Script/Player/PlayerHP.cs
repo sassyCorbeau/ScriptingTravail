@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerHP : MonoBehaviour
 {
@@ -9,12 +10,16 @@ public class PlayerHP : MonoBehaviour
     public GameObject ui;
     public GameObject decimus;
 
+    public Text lifeText;
+
     public AudioClip death;
    
 
     // Update is called once per frame
     void Update()
     {
+        lifeText.text = PlayerHealth.ToString();
+
         if (PlayerHealth == 0)
         {
             // ui.SetActive(false);

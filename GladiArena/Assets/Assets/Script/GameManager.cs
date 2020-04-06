@@ -78,7 +78,7 @@ public class GameManager : MonoBehaviour
         spreadShotActive();
 
         scoreDisplay.GetComponent<Text>().text = score.ToString();
-
+        scoreGO.GetComponent<Text>().text = score.ToString();
     }
 
     void PowerUPSwitch()
