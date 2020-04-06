@@ -9,7 +9,7 @@ public class PlayerMvt : MonoBehaviour
     public float gravity = 20f;
     private Vector3 moveDirection = Vector3.zero;
     CharacterController Cc;
-    public GameObject fin;
+   // public GameObject fin;
     public Animator animator;
 
     Vector2 movement;

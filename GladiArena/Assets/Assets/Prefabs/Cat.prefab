@@ -111,11 +111,11 @@ GameObject:
   m_Component:
   - component: {fileID: 3888658314508457381}
   - component: {fileID: 3888658314508457380}
-  - component: {fileID: 3888658314508457382}
   - component: {fileID: 3888658314508457437}
   - component: {fileID: 3888658314508457434}
   - component: {fileID: 3888658314508457435}
   - component: {fileID: 3888658314508457432}
+  - component: {fileID: 2847165980022241568}
   - component: {fileID: 2273780594044287846}
   m_Layer: 0
   m_Name: Cat
@@ -147,19 +147,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3888658314508457436}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!65 &3888658314508457382
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3888658314508457436}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &3888658314508457437
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -172,7 +159,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5f070bedfd5c2624495731a98da5a7eb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 3
+  speed: 1.5
   enemyKill: {fileID: 8300000, guid: a3ff8a98bf8e5ab4fa7f8b085fb35dd4, type: 3}
   death: {fileID: 8300000, guid: 4668d9fcf8d264f3693f23878a14042b, type: 3}
   Player: {fileID: 0}
@@ -200,10 +187,10 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3888658314508457436}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
+  m_Size: {x: 1, y: 0.8, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &3888658314508457432
 MonoBehaviour:
@@ -217,8 +204,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 587b839b1328aef43af51c967aa42b64, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lifePickup: {fileID: 0}
+  lifePickup: {fileID: 2443590618770175701, guid: 234fae3433f94254ea568ea7010c25b6,
+    type: 3}
   powerUp: {fileID: 7129298622702279938, guid: e2acd64b193c29f4cae30d129901b617, type: 3}
+--- !u!114 &2847165980022241568
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3888658314508457436}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e91967a5360535f47b408db2bd69fa1d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tacheDeSang: {fileID: 425925861026481137, guid: f5a7135e6648b0a4a9b35ed37c08fb70,
+    type: 3}
+  tacheDeSang2: {fileID: 3904831472173096878, guid: 929f3be3d463c7b48aa59d62ff70f08b,
+    type: 3}
+  timeToWait: 5
 --- !u!114 &2273780594044287846
 MonoBehaviour:
   m_ObjectHideFlags: 0
