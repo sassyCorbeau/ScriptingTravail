@@ -855,6 +855,18 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 1935229304}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &919482639 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8061213920522471097, guid: 32c65316ca8d3f740afeb0d32a1819a2,
+    type: 3}
+  m_PrefabInstance: {fileID: 1935229304}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &954093118 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8061213920678380046, guid: 32c65316ca8d3f740afeb0d32a1819a2,
@@ -1678,6 +1690,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 8061213920270575834, guid: 32c65316ca8d3f740afeb0d32a1819a2,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8061213920312647429, guid: 32c65316ca8d3f740afeb0d32a1819a2,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2211,4 +2228,5 @@ MonoBehaviour:
   gameoverUI: {fileID: 1121994214}
   ui: {fileID: 1876219298}
   decimus: {fileID: 7341136904582596930}
+  lifeText: {fileID: 919482639}
   death: {fileID: 8300000, guid: 4668d9fcf8d264f3693f23878a14042b, type: 3}
