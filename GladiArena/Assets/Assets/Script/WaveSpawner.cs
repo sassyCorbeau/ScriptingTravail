@@ -96,7 +96,7 @@ public class WaveSpawner : MonoBehaviour
         camSource.Play();
 
         //à changer au besoin
-        waves.count += 2;
+        waves.count += 1;
     }
 
     

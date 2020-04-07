@@ -6,6 +6,8 @@ public class LifePickup : MonoBehaviour
 {
     public AudioClip collect;
 
+    
+
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player"))
@@ -31,5 +33,7 @@ public class LifePickup : MonoBehaviour
         camSource.Play();
 
     }
+
+    
 
 }
