@@ -10,13 +10,18 @@ public class PlayerHP : MonoBehaviour
     public GameObject ui;
     public GameObject decimus;
 
+    public Text highScore;
+    public GameObject highScoreUI;
+
     public Text lifeText;
 
     public AudioClip death;
 
     public void Start()
     {
+        highScore.text = PlayerPrefs.GetInt("HighScore", 0).ToString();
         PlayerHealth = 0;
+        highScoreUI.SetActive(false);
         gameoverUI.SetActive(false);
     }
 
@@ -28,8 +33,16 @@ public class PlayerHP : MonoBehaviour
 
         if (PlayerHealth <= -1)
         {
-            // ui.SetActive(false);
+            
+            ui.SetActive(false);
             gameoverUI.SetActive(true);
+            if(GameManager.score > PlayerPrefs.GetInt("HighScore", 0))
+            {
+                PlayerPrefs.SetInt("HighScore", GameManager.score);
+                highScore.text = GameManager.score.ToString();
+                highScoreUI.SetActive(true);
+            }
+
             Destroy(decimus);
         }
     }

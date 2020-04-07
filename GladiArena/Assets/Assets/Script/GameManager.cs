@@ -49,6 +49,8 @@ public class GameManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        
+
         fireRate = false;
         spreadShot = false;
         speedBoost = false;
@@ -59,7 +61,7 @@ public class GameManager : MonoBehaviour
         score = 0;
 
         goShield.SetActive(false);
-
+        
 
         //PowerUP = 0;
 
@@ -225,7 +227,7 @@ public class GameManager : MonoBehaviour
         }
         else
         {
-            Debug.Log("ca marche toi tg stp le ; est la tkt");
+            
             pUp4Active.SetActive(false);
 
         }
