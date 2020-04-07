@@ -215,7 +215,7 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 11506}
     - Class: 114
-      Script: {instanceID: 23586}
+      Script: {instanceID: 16304}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -811,4 +811,4 @@ ScriptsOnlyBuild:
   scenePathNames:
   - Assets/Scenes/MenuScene.unity
   - Assets/Scenes/GAME.unity
-  playerPath: D:/E-Art/Scripting/GladiarenaBuild/GladiArena.exe
+  playerPath: D:/Utilisateur/Documents/Gladiarena/Gladiarena/GladiArena.exe
