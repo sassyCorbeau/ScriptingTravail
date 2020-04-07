@@ -13,11 +13,13 @@ public class PlayerHP : MonoBehaviour
     public Text lifeText;
 
     public AudioClip death;
-   
-    void Start()
+
+    public void Start()
     {
+        PlayerHealth = 0;
         gameoverUI.SetActive(false);
     }
+
 
     // Update is called once per frame
     void Update()
