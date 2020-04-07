@@ -1,9 +1,5 @@
 sceneSetups:
-<<<<<<< HEAD
-- path: Assets/Scenes/Emilien.unity
-=======
 - path: Assets/Scenes/GAME.unity
->>>>>>> 71f15ba16713046307f88ec7645bfa003b4aed99
   isLoaded: 1
   isActive: 1
   isSubScene: 0
