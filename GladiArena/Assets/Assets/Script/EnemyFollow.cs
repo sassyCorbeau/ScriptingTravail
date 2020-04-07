@@ -8,7 +8,7 @@ public class EnemyFollow : MonoBehaviour
     public float speed = 5f;
     //Changer sur l'inspector si la vitesse ne va pas
     public AudioClip enemyKill;
-    public AudioClip death;
+    
 
     public Transform Player;
     //Remplir sur l'inspector avec le Player
@@ -28,30 +28,13 @@ public class EnemyFollow : MonoBehaviour
         
         Vector3 displacement = Player.position - transform.position;
         displacement = displacement.normalized;
-        if (Vector2.Distance(Player.position, transform.position) > 1.0f)
+        if (Vector2.Distance(Player.position, transform.position) > 0.5f)
         {
             transform.position += (displacement * speed * Time.deltaTime);
         }
 
-        
-
     }
-    private void OnCollisionEnter(Collision collision)
-    {
-        if (collision.gameObject.CompareTag("Player"))
-        {
-            Destroy(gameObject);
-            
-
-                AudioSource camSource = Camera.main.GetComponent<AudioSource>();
-                Debug.Log("Tu mort !");
-                camSource.clip = death;
-                camSource.Play();
-
-            
-        }
-        
-    }
+   
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.CompareTag("bullet"))

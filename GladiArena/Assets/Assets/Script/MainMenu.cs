@@ -5,54 +5,26 @@ using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
 {
-    public AudioClip menu;
-    bool playCheck = false;
-    bool quitCheck = false;
-    float playTimmer=0f;
+    public AudioSource selectionAudioClip;
 
-    /* void update()
-    {
-        if(playcheck == true)
-        {
-            playTimmer = playTimmer + Time.deltatime;
-            if (playTimmer >= 2.1)
-            {
-                SceneManager.LoadScene(1);
-                playTimmer = 0;
-            }
-        }
-        if (quitCheck == true)
-        {
-            playTimmer = playTimmer + Time.deltatime;
-            if (playTimmer >= 2.1)
-            {
-                Application.Quit();
-            }
-        }
-    }*/
-    public void PlayGame()
-    {
-        //playCheck = true;
-        AudioSource camSource = Camera.main.GetComponent<AudioSource>();
-        Debug.Log("Tu dum !(du menu)");
-        camSource.clip = menu;
-        camSource.Play();
-        /*
-        if (camSource.isPlaying()) 
-        {; }*/
-        SceneManager.LoadScene(1);
+    bool ReadyToLoad = false;
 
+    void Update()
+    {
+        if (ReadyToLoad == true && !selectionAudioClip.isPlaying)
+        {
+            SceneManager.LoadScene(1);
+        }
+    }
+
+    public void StartGame()
+    {
+        selectionAudioClip.Play(0);
+        ReadyToLoad = true;
     }
 
     public void QuitGame()
     {
-        //quitCheck = true;
-
-        AudioSource camSource = Camera.main.GetComponent<AudioSource>();
-        Debug.Log("Tu dum !(du menu)");
-        camSource.clip = menu;
-        camSource.Play();
-        
-        
+        Application.Quit();
     }
 }

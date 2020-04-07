@@ -1,22 +1,30 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerHP : MonoBehaviour
 {
-    public static int PlayerHealth = 1;
+    public static int PlayerHealth = 0;
     public GameObject gameoverUI;
     public GameObject ui;
     public GameObject decimus;
+
+    public Text lifeText;
+
+    public AudioClip death;
+   
     void Start()
     {
-        
+        gameoverUI.SetActive(false);
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (PlayerHealth == 0)
+        lifeText.text = PlayerHealth.ToString();
+
+        if (PlayerHealth <= -1)
         {
             // ui.SetActive(false);
             gameoverUI.SetActive(true);
@@ -24,17 +32,27 @@ public class PlayerHP : MonoBehaviour
         }
     }
 
-    private void OnCollisionEnter(Collision collision)
+    private void OnTriggerEnter(Collider collision)
     {
         if (collision.gameObject.CompareTag("bad"))
         {
+            Destroy (collision.gameObject);
+
             if(GameManager.shield == true)
             {
                 GameManager.playergethit = true;
                 return;
             }
+
+                AudioSource camSource = Camera.main.GetComponent<AudioSource>();
+                Debug.Log("Tu mort !");
+                camSource.clip = death;
+                camSource.Play();
+
             Debug.Log("PlayerHP--");
             PlayerHealth--;
         }
     }
+
+
 }
