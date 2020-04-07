@@ -28,12 +28,10 @@ public class EnemyFollow : MonoBehaviour
         
         Vector3 displacement = Player.position - transform.position;
         displacement = displacement.normalized;
-        if (Vector2.Distance(Player.position, transform.position) > 1.0f)
+        if (Vector2.Distance(Player.position, transform.position) > 0.5f)
         {
             transform.position += (displacement * speed * Time.deltaTime);
         }
-
-        
 
     }
    

@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class PlayerHP : MonoBehaviour
 {
-    public static int PlayerHealth = 1;
+    public static int PlayerHealth = 0;
     public GameObject gameoverUI;
     public GameObject ui;
     public GameObject decimus;
@@ -14,13 +14,17 @@ public class PlayerHP : MonoBehaviour
 
     public AudioClip death;
    
+    void Start()
+    {
+        gameoverUI.SetActive(false);
+    }
 
     // Update is called once per frame
     void Update()
     {
         lifeText.text = PlayerHealth.ToString();
 
-        if (PlayerHealth == 0)
+        if (PlayerHealth <= -1)
         {
             // ui.SetActive(false);
             gameoverUI.SetActive(true);

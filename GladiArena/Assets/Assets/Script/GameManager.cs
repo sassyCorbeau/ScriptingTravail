@@ -24,6 +24,8 @@ public class GameManager : MonoBehaviour
     public GameObject pUp5Activable;
     public GameObject pUp5Active;
 
+    public GameObject goShield;
+
     public GameObject scoreDisplay;
     public GameObject scoreGO;
 
@@ -53,6 +55,8 @@ public class GameManager : MonoBehaviour
         multiHit = false;
         defaut = false;
         PowerUP = 0;
+
+        goShield.SetActive(false);
 
         //PowerUP = 0;
 
@@ -148,6 +152,7 @@ public class GameManager : MonoBehaviour
                     PowerUP = 0;
 
                     pUp4Activable.SetActive(false);
+                   
 
                     Debug.Log("shield");
 
@@ -187,16 +192,16 @@ public class GameManager : MonoBehaviour
         if (fireRate == true)
         {
             pUp1Active.SetActive(true);
-            Debug.Log("fireRate = True");
+            
 
             timerPower = timerPower + Time.deltaTime;
 
             PlayerShootTexte.fireRate = 0.2f;
-            Debug.Log("Firerate changée");
+            
             if (timerPower > 10)
             {
                 fireRate = false;
-                Debug.Log("fireRate End");
+                
                 PlayerShootTexte.fireRate = 0.5f;
                 pUp1Active.SetActive(false);
                 timerPower = 0;
@@ -210,56 +215,38 @@ public class GameManager : MonoBehaviour
     void shieldPower()
     {
 
-        if (playergethit == true)
-        {
-            Debug.Log("Shield is off");
-            shieldsprite.SetActive(false);
-            timerPower = 0;
-            
-            playergethit = false;
-            shield = false;
-            return;
-        }
-
-        if (timerPower > 10)
-        {
-            Debug.Log("Shield is off");
-            shieldsprite.SetActive(false);
-            shield = false;
-            playergethit = false;
-            pUp4Active.SetActive(false);
-            timerPower = 0;
-            return;
-        }
-        
         if (shield == true)
         {
-            pUp4Active.SetActive(true);
-            shieldsprite.SetActive(true);
-            Debug.Log("Shield is on");
+            goShield.SetActive(true);
 
-            timerPower = timerPower + Time.deltaTime;
-            PlayerHP.PlayerHealth++;            
+            pUp4Active.SetActive(true);
+            //shieldsprite.SetActive(true);
             
+        }
+        else
+        {
+            Debug.Log("ca marche toi tg stp le ; est la tkt");
+            pUp4Active.SetActive(false);
 
         }
     }
+    
+
     void speedBoostPower()
     {
         if (speedBoost == true)
         {
             pUp3Active.SetActive(true);
-            Debug.Log("speedBoost = True");
-
+            
             timerPower = timerPower + Time.deltaTime;
 
-            PlayerMvt.speed = 18f;
-            Debug.Log("speedBoost changée");
+            PlayerMvt.speed = 12f;
+            
             if (timerPower > 10)
             {
                 speedBoost = false;
                 pUp3Active.SetActive(false);
-                Debug.Log("speedBoost End");
+                
                 PlayerMvt.speed = 6f;
                 timerPower = 0;
                 return;

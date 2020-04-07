@@ -308,6 +308,7 @@ MonoBehaviour:
   pUp5: {fileID: 1952594647}
   pUp5Activable: {fileID: 1456996572}
   pUp5Active: {fileID: 1573079591}
+  goShield: {fileID: 256142351}
   scoreDisplay: {fileID: 899117534}
   scoreGO: {fileID: 1360119851}
   shieldsprite: {fileID: 256142351}
@@ -367,6 +368,18 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1400783262}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &256142353
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 256142351}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a051378bab6edb429f93c2b2e6cdf2e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &257305077
 GameObject:
   m_ObjectHideFlags: 0
@@ -969,7 +982,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: e157d8c7fe1c3c64c912271f5c63885f, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.05
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -1089,6 +1102,18 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 1935229304}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1121994216
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1121994214}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2dae492e03877742872aad991863340, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1181729682
 GameObject:
   m_ObjectHideFlags: 0
@@ -1363,6 +1388,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 7341136904582596936}
     m_Modifications:
+    - target: {fileID: 6582274833711241426, guid: 39cb0dcbd9219a24a9ebee3697dd091b,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8913535115650008397, guid: 39cb0dcbd9219a24a9ebee3697dd091b,
         type: 3}
       propertyPath: m_Name
@@ -1507,7 +1537,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 6ef4ade26fd5d9d419f586d002252cee, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.1
+  m_Volume: 0.05
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -1690,6 +1720,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 8061213920192042583, guid: 32c65316ca8d3f740afeb0d32a1819a2,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1121994216}
+    - target: {fileID: 8061213920192042583, guid: 32c65316ca8d3f740afeb0d32a1819a2,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ReSatan
+      objectReference: {fileID: 0}
     - target: {fileID: 8061213920270575834, guid: 32c65316ca8d3f740afeb0d32a1819a2,
         type: 3}
       propertyPath: m_IsActive
@@ -1839,6 +1879,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.x
       value: 0.7695734
+      objectReference: {fileID: 0}
+    - target: {fileID: 8061213921359888198, guid: 32c65316ca8d3f740afeb0d32a1819a2,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1121994216}
+    - target: {fileID: 8061213921359888198, guid: 32c65316ca8d3f740afeb0d32a1819a2,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: PasReSatan
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 32c65316ca8d3f740afeb0d32a1819a2, type: 3}

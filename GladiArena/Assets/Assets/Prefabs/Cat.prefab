@@ -161,7 +161,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 1.5
   enemyKill: {fileID: 8300000, guid: a3ff8a98bf8e5ab4fa7f8b085fb35dd4, type: 3}
-  death: {fileID: 8300000, guid: 4668d9fcf8d264f3693f23878a14042b, type: 3}
   Player: {fileID: 0}
 --- !u!54 &3888658314508457434
 Rigidbody:
@@ -187,7 +186,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3888658314508457436}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 0.8, z: 1}
