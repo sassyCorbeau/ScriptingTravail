@@ -214,7 +214,15 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 11506}
     - Class: 114
+<<<<<<< HEAD
       Script: {instanceID: 16258}
+=======
+<<<<<<< HEAD
+      Script: {instanceID: 14580}
+=======
+      Script: {instanceID: 16304}
+>>>>>>> e1d7e8602c7ff92a021859386a8a8a4d83de4dcb
+>>>>>>> 365577db1a6a4761323cf38b8fb702fbf5ee4056
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -810,4 +818,8 @@ ScriptsOnlyBuild:
   scenePathNames:
   - Assets/Scenes/MenuScene.unity
   - Assets/Scenes/GAME.unity
+<<<<<<< HEAD
+  playerPath: D:/E-artsup/Unity/Gladiarena/GladiArena.exe
+=======
   playerPath: D:/Utilisateur/Documents/Gladiarena/Gladiarena/GladiArena.exe
+>>>>>>> e1d7e8602c7ff92a021859386a8a8a4d83de4dcb

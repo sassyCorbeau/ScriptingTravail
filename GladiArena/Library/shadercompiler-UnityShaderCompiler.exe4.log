@@ -1,2 +1,10 @@
-Base path: 'C:/Program Files/Unity/Hub/Editor/2019.2.15f1/Editor/Data', plugins path 'C:/Program Files/Unity/Hub/Editor/2019.2.15f1/Editor/Data/PlaybackEngines'
+Base path: 'D:/Program files/Unity/2019.2.15f1/Editor/Data', plugins path 'D:/Program files/Unity/2019.2.15f1/Editor/Data/PlaybackEngines'
 Cmd: initializeCompiler
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+
+Quitting shader compiler process
+>>>>>>> e1d7e8602c7ff92a021859386a8a8a4d83de4dcb
+>>>>>>> 365577db1a6a4761323cf38b8fb702fbf5ee4056
