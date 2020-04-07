@@ -7,12 +7,13 @@ public class REPLAY : MonoBehaviour
 {
    public void ReSatan()
     {
-        SceneManager.LoadScene(1);
-
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        
     }
 
     public void PasReSatan()
     {
         SceneManager.LoadScene(0);
+       
     }
 }
