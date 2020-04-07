@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class GameManager : MonoBehaviour
 {
     public static int PowerUP = 0;
+
     
 
     public GameObject pUp1;
@@ -55,8 +56,10 @@ public class GameManager : MonoBehaviour
         multiHit = false;
         defaut = false;
         PowerUP = 0;
+        score = 0;
 
         goShield.SetActive(false);
+
 
         //PowerUP = 0;
 
