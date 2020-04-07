@@ -16,6 +16,7 @@ public class PlayerHP : MonoBehaviour
    
     void Start()
     {
+        PlayerHealth = 0;
         gameoverUI.SetActive(false);
     }
 
