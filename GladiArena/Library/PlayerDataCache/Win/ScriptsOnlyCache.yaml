@@ -32,7 +32,6 @@ ScriptsOnlyBuild:
     - TMPro.TextMeshProUGUI
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
-    - UnityEditor.TestTools.TestRunner.TestListCacheData
     UnityEngine.UI.dll:
     - UnityEngine.EventSystems.EventSystem
     - UnityEngine.EventSystems.StandaloneInputModule
@@ -215,7 +214,7 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 11506}
     - Class: 114
-      Script: {instanceID: 16304}
+      Script: {instanceID: 16258}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
