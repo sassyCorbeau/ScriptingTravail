@@ -63,9 +63,6 @@ public class GameManager : MonoBehaviour
 
         //PowerUP = 0;
 
-
-
-
     }
 
     // Update is called once per frame

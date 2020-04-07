@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class LifePickup : MonoBehaviour
 {
+    public AudioClip collect;
+
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player"))
@@ -20,5 +22,14 @@ public class LifePickup : MonoBehaviour
         Destroy(gameObject);
     }
 
-  
+    void OnDestroy()
+    {
+
+        AudioSource camSource = Camera.main.GetComponent<AudioSource>();
+        Debug.Log("Tu dum !");
+        camSource.clip = collect;
+        camSource.Play();
+
+    }
+
 }
